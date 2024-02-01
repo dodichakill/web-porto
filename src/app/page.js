@@ -1,113 +1,250 @@
+"use client";
 import Image from "next/image";
+import { useEffect } from "react";
+import AOS from "aos";
+import Navbar from "@/components/Navbar";
+import imgProfile from "@/assets/img/profile.png";
+import Link from "next/link";
+import { FaRegNewspaper } from "react-icons/fa6";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  });
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="relative">
+      <Navbar />
+      <main className="w-[95%] mx-auto mb-10">
+        <div
+          className="flex flex-col-reverse lg:flex-row bg-gradient-to-tr from-sky-500 shadow-xl shadow-blue-300 to-blue-600 rounded-xl text-white gap-10 p-5 lg:px-10 lg:py-32 justify-evenly items-center"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <section
+            className="sm:mx-10 sm:w-1/2"
+            data-aos="fade-left"
+            data-aos-delay="500"
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            <h1 className="text-5xl font-bold font-sans">
+              Hi, im Dodi <br />
+              Software Developer
+            </h1>
+
+            <p className="mt-6 text-lg font-mono">
+              I am interested in Software Engineering especially in Frontend
+              Development and other fields that require logical thinking and
+              creativity. I am interested in Software Engineering and have
+              started Coding as my daily activity since the first grade of high
+              school.
+            </p>
+
+            <Link
+              href="https://bit.ly/ResumeATS"
+              className="resume mt-5 inline-block text-blue-500 font-semibold text-xl font-sans bg-white px-5 py-4 rounded-xl"
+              target="_blank"
+            >
+              <span className="flex gap-2 items-center">
+                <FaRegNewspaper /> Check out My Resume
+              </span>
+            </Link>
+          </section>
+          <Image
+            src={imgProfile}
+            alt="profile"
+            className="w-96 object-contain"
+            data-aos="fade-right"
+            data-aos-delay="700"
+          />
         </div>
-      </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+        {/* <div id="skills" data-aos="fade-down" data-aos-delay="300">
+          <h2>
+            <i className="fa-solid fa-code"></i>Skills
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+          <section>
+            <div
+              className="item"
+              style="background-color: red"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
+              <i className="fa-brands fa-html5"></i>
+              <span>HTML</span>
+            </div>
+            <div
+              className="item"
+              style="background-color: blue"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
+              <i className="fa-brands fa-css3"></i> <span>CSS</span>
+            </div>
+            <div
+              className="item"
+              style="background-color: yellow"
+              data-aos="fade-left"
+              data-aos-delay="300"
+            >
+              <i className="fa-brands fa-js-square"></i>
+              <span style="color: black">javascript</span>
+            </div>
+            <div
+              className="item"
+              style="background-color: rgb(69, 114, 238)"
+              data-aos="fade-left"
+              data-aos-delay="400"
+            >
+              <i className="fa-brands fa-php"></i>
+              <span>PHP</span>
+            </div>
+            <div
+              className="item"
+              style="background-color: rgb(69, 199, 238)"
+              data-aos="fade-left"
+              data-aos-delay="500"
+            >
+              <i className="fa-brands fa-react"></i>
+              <span style="color: black">ReactJS</span>
+            </div>
+            <div
+              className="item"
+              style="background-color: rgb(238, 94, 69)"
+              data-aos="fade-left"
+              data-aos-delay="600"
+            >
+              <i className="fa-brands fa-laravel"></i>
+              <span>Laravel</span>
+            </div>
+            <div
+              className="item"
+              style="background-color: rgb(238, 173, 69)"
+              data-aos="fade-left"
+              data-aos-delay="700"
+            >
+              <i className="fa-solid fa-database"></i>
+              <span>MySQL</span>
+            </div>
+            <div
+              className="item"
+              style="background-color: rgb(124, 18, 237)"
+              data-aos="fade-left"
+              data-aos-delay="800"
+            >
+              <i className="fa-brands fa-bootstrap"></i>
+              <span>Bootstrap</span>
+            </div>
+            <div
+              className="item"
+              style="background-color: rgb(83, 117, 252)"
+              data-aos="fade-left"
+              data-aos-delay="900"
+            >
+              <i className="fa-solid fa-wind"></i>
+              <span>Tailwindcss</span>
+            </div>
+          </section>
+        </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+        <div id="project" data-aos="fade-up" data-aos-delay="500">
+          <h2>
+            <i className="fa-brands fa-slideshare"></i> Project
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          <section>
+            <div className="card" data-aos="fade-up" data-aos-delay="600">
+              <img src="img/tranquilmind.png" alt="tranquilmind" />
+              <div className="card-body">
+                <h3>TranquilMind</h3>
+                <p className="desc">
+                  a web project about mental health, professional help and
+                  podcasts. made with nextjs, tailwindcss, firebase
+                </p>
+                <a href="https://tranquilmind.my.id/" target="_blank">
+                  <i className="fa-solid fa-eye"></i> PREVIEW
+                </a>
+              </div>
+            </div>
+            <div className="card" data-aos="fade-up" data-aos-delay="700">
+              <img src="img/lkp.png" alt="lkpdanlpksekar" />
+              <div className="card-body">
+                <h3>LKP & LKP Sekar</h3>
+                <p className="desc">
+                  An official web project of LKP & LKP Sekar in tegal city, jawa
+                  tengah. center. made with laravel, tailwindcss, reactjs, mysql
+                </p>
+                <a href="http://lkpdanlpksekar.com/" target="_blank">
+                  <i className="fa-solid fa-eye"></i> PREVIEW
+                </a>
+              </div>
+            </div>
+            <div className="card" data-aos="fade-up" data-aos-delay="800">
+              <img src="img/foodinesia.png" alt="foodinesia" />
+              <div className="card-body">
+                <h3>Foodinesia</h3>
+                <p className="desc">
+                  A web project about healthy food community & healthy food
+                  blog. made with pure html, css, javascript
+                </p>
+                <a href="https://foodinesia.netlify.app/" target="_blank">
+                  <i className="fa-solid fa-eye"></i> PREVIEW
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+        <div id="contact" data-aos="fade-down" data-aos-delay="500">
+          <h2>
+            <i className="fa-solid fa-contact-book"></i> Contact
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+          <section>
+            <a
+              href="https://wa.me/6285524632537"
+              className="item"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <i className="fa-solid fa-phone"></i>
+              085524632537
+            </a>
+            <a
+              href="mailto:dodidev91@gmail.com"
+              className="item"
+              data-aos="fade-up"
+              data-aos-delay="700"
+            >
+              <i className="fa-solid fa-envelope"></i>dodidev91@gmail.com
+            </a>
+            <a
+              href="https://www.linkedin.com/in/dodi-dev/"
+              className="item"
+              data-aos="fade-up"
+              data-aos-delay="800"
+            >
+              <i className="fa-brands fa-linkedin"></i>
+              in/dodi-dev
+            </a>
+            <a
+              href="https://www.instagram.com/hrl9127/"
+              className="item"
+              data-aos="fade-up"
+              data-aos-delay="900"
+            >
+              <i className="fa-brands fa-instagram"></i>
+              @hrl9127
+            </a>
+            <a
+              href="https://github.com/dodichakill"
+              className="item"
+              data-aos="fade-up"
+              data-aos-delay="1000"
+            >
+              <i className="fa-brands fa-github"></i>
+              @dodichakill
+            </a>
+          </section>
+        </div> */}
+      </main>
+    </div>
   );
 }
