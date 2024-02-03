@@ -12,7 +12,7 @@ import {
   FaFigma,
   FaGitAlt,
 } from "react-icons/fa6";
-import { SiJavascript, SiTailwindcss } from "react-icons/si";
+import { SiFirebase, SiJavascript, SiTailwindcss } from "react-icons/si";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs, TbBrandVscode } from "react-icons/tb";
 import { GrMysql } from "react-icons/gr";
@@ -37,10 +37,12 @@ export default function Skills() {
           <CardSkill icon={<SiTailwindcss />} name={"TailwindCSS"} />
           <CardSkill icon={<FaBootstrap />} name={"Bootstrap"} />
           <CardSkill icon={<RiReactjsLine />} name={"ReactJS"} />
+          <CardSkill icon={<RiReactjsLine />} name={"React Native"} />
           <CardSkill icon={<TbBrandNextjs />} name={"NextJS"} />
           <CardSkill icon={<FaPhp />} name={"PHP"} />
           <CardSkill icon={<FaLaravel />} name={"Laravel"} />
           <CardSkill icon={<GrMysql />} name={"MySQL"} />
+          <CardSkill icon={<SiFirebase />} name={"Firebase"} />
           <CardSkill icon={<FaFigma />} name={"Figma"} />
           <CardSkill icon={<FaGitAlt />} name={"Github & Gitlab"} />
           <CardSkill icon={<TbBrandVscode />} name={"VSCode"} />

@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import React from "react";
 import Container from "@/components/Container";
 import CardProject from "@/components/CardProject";
-import { FaCss3, FaHtml5, FaLaravel } from "react-icons/fa6";
+import { FaBootstrap, FaCss3, FaHtml5, FaLaravel } from "react-icons/fa6";
 import { SiFirebase, SiJavascript, SiTailwindcss } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { RiReactjsLine } from "react-icons/ri";
@@ -87,6 +87,7 @@ export default function Skills() {
                 <SiJavascript title="Javascript" />{" "}
                 <RiReactjsLine title="React" />{" "}
                 <SiTailwindcss title="Tailwind" />
+                <FaBootstrap title="Bootstrap" />
               </>
             }
           />
