@@ -2,7 +2,6 @@ import CardSkill from "@/components/CardSkill";
 import Navbar from "@/components/Navbar";
 import React from "react";
 import {
-  FaCode,
   FaHtml5,
   FaCss3,
   FaBootstrap,

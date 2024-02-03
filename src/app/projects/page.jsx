@@ -13,6 +13,8 @@ import imgTranquilmind from "@/assets/img/tranquilmind.png";
 import imgHipmi from "@/assets/img/hipmi.png";
 import imgFoodinesia from "@/assets/img/foodinesia.png";
 import imgJaskipin from "@/assets/img/Djaskipin.png";
+import imgSisa from "@/assets/img/SISA.png";
+
 export default function Skills() {
   return (
     <div className="pb-5 relative">
@@ -88,6 +90,19 @@ export default function Skills() {
                 <RiReactjsLine title="React" />{" "}
                 <SiTailwindcss title="Tailwind" />
                 <FaBootstrap title="Bootstrap" />
+              </>
+            }
+          />
+
+          <CardProject
+            name="SISA mobile apps"
+            image={imgSisa}
+            desc="A waste bank mobile application project for Cirebon district government"
+            icTech={
+              <>
+                <SiJavascript title="Javascript" />{" "}
+                <RiReactjsLine title="React Native" />{" "}
+                <SiTailwindcss title="Nativewind" />
               </>
             }
           />
