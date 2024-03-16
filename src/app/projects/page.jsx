@@ -14,6 +14,7 @@ import imgHipmi from "@/assets/img/hipmi.png";
 import imgFoodinesia from "@/assets/img/foodinesia.png";
 import imgJaskipin from "@/assets/img/Djaskipin.png";
 import imgSisa from "@/assets/img/SISA.png";
+import imgExplorenias from "@/assets/img/explorenias.png";
 
 export default function Skills() {
   return (
@@ -50,6 +51,19 @@ export default function Skills() {
               </>
             }
             link={"https://www.tranquilmind.my.id/"}
+          />
+
+          <CardProject
+            name="Explore Nias"
+            image={imgExplorenias}
+            desc="a web project to introduce the culture, culinary and tourism of Nias Island."
+            icTech={
+              <>
+                <TbBrandNextjs title="NextJS" />{" "}
+                <SiTailwindcss title="Tailwind" />{" "}
+              </>
+            }
+            link={"https://www.explorenias.my.id/"}
           />
 
           <CardProject
