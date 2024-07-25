@@ -9,6 +9,8 @@ import { GrMysql } from "react-icons/gr";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 import imgLKP from "@/assets/img/lkp.png";
+import imgWy from "@/assets/img/wonderfuly.png";
+import imgNoc from "@/assets/img/noc.png";
 import imgTranquilmind from "@/assets/img/tranquilmind.png";
 import imgHipmi from "@/assets/img/hipmi.png";
 import imgFoodinesia from "@/assets/img/foodinesia.png";
@@ -26,6 +28,31 @@ export default function Skills() {
         </h1>
 
         <div className="grid lg:grid-cols-3 gap-10 lg:mx-10 mb-5">
+          <CardProject
+            name="Nocturn"
+            image={imgNoc}
+            desc="Nocturn is an Web app designed to help you improve your sleep quality."
+            icTech={
+              <>
+                <TbBrandNextjs title="NextJS" />{" "}
+                <SiTailwindcss title="Tailwind" />{" "}
+                <SiFirebase title="Firebase" />{" "}
+              </>
+            }
+            link={"https://nocturn-site.netlify.app/"}
+          />
+          <CardProject
+            name="Wonderful Yogyakarta"
+            image={imgWy}
+            desc="a website to introduce culture, tourism & culinary in yogyakarta."
+            icTech={
+              <>
+                <FaHtml5 title="HTML" /> <FaCss3 title="CSS" />{" "}
+                <SiJavascript title="Javascript" />
+              </>
+            }
+            link={"https://wonderful-yogyakarta.netlify.app/"}
+          />
           <CardProject
             name="LKP & LPK Sekar"
             image={imgLKP}

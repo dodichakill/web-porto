@@ -4,7 +4,7 @@ import { FaArrowAltCircleUp } from "react-icons/fa";
 
 function Container({ children }) {
   return (
-    <div className="w-[95%] mx-auto border-4 border-blue-300 rounded-xl px-2 sm:px-10 py-20 shadow-lg shadow-blue-200 relative">
+    <div className="w-[95%] mt-32 mx-auto border-4 border-blue-300 rounded-xl px-2 sm:px-10 py-20 shadow-lg shadow-blue-200 relative">
       {children}
 
       <Link

@@ -21,7 +21,7 @@ function CardProject({
         {link && (
           <Link
             href={link}
-            className="mt-5 text-blue-500 border-2 border-blue-300 font-semibold text-lg sm:text-xl font-sans bg-white px-5 py-3 rounded-xl flex items-center gap-1 sm:gap-3"
+            className="mt-5 hover:text-white transition-all hover:bg-blue-500 text-blue-500 border-2 border-blue-300 font-semibold text-lg sm:text-xl font-sans bg-white px-5 py-3 rounded-xl flex items-center gap-1 sm:gap-3"
           >
             <FaEye /> View
           </Link>

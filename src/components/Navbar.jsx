@@ -8,7 +8,7 @@ import { BiSolidContact } from "react-icons/bi";
 const MenuItem = ({ name, href, icon, active }) => {
   return (
     <Link
-      className={`flex flex-col sm:flex-row font-sans items-center gap-2 hover:font-semibold  +
+      className={`flex flex-col sm:flex-row font-sans items-center gap-2  +
         ${active === name ? "font-semibold underline underline-offset-4" : ""}`}
       href={href}
     >
@@ -17,12 +17,12 @@ const MenuItem = ({ name, href, icon, active }) => {
   );
 };
 
-function Navbar({ active = "About Me" }) {
+function Navbar({ active = "About" }) {
   return (
     <>
       <header
         data-aos="fade-down"
-        className="w-[95%] mx-auto py-6 px-8 justify-between rounded-xl box-border my-5 flex bg-blue-950 text-white items-center shadow-lg"
+        className="w-[95%] top-0 right-0 left-0 z-50 fixed mx-auto py-6 px-8 justify-between rounded-xl box-border my-5 flex bg-blue-950 text-white items-center shadow-lg"
         id="top"
       >
         <Link
@@ -35,7 +35,7 @@ function Navbar({ active = "About Me" }) {
           <MenuItem
             active={active}
             href="/"
-            name={"About Me"}
+            name={"About"}
             icon={<FaAddressCard />}
           />
           <MenuItem

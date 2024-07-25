@@ -5,7 +5,7 @@ import Container from "@/components/Container";
 import { FaEnvelope, FaGithub, FaLinkedin, FaPhone } from "react-icons/fa6";
 export default function Contact() {
   return (
-    <div className="pb-5">
+    <div className="pb-5 relative">
       <Navbar active="Contact" />
       <Container>
         <h1 className="text-center mb-10 underline underline-offset-8 text-4xl font-sans font-semibold">
