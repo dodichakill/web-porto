@@ -31,7 +31,7 @@ function Navbar({ active = "About" }) {
         >
           Web Portofolio
         </Link>
-        <nav className="flex items-center text-sm sm:text-2xl justify-between gap-4 sm:gap-7">
+        <nav className="flex items-center w-full sm:w-auto text-sm sm:text-2xl justify-between gap-4 sm:gap-7">
           <MenuItem
             active={active}
             href="/"

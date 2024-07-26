@@ -24,7 +24,7 @@ export default function Skills() {
       <Navbar active="Projects" />
       <Container>
         <h1 className="text-center mb-10 underline underline-offset-8 text-4xl font-sans font-semibold">
-          Project
+          Projects
         </h1>
 
         <div className="grid lg:grid-cols-3 gap-10 lg:mx-10 mb-5">

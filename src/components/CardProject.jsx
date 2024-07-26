@@ -10,9 +10,9 @@ function CardProject({
   link,
 }) {
   return (
-    <div className="bg-gradient-to-r shadow-lg p-5 rounded-xl">
+    <div className="bg-gradient-to-tr shadow-blue-300 transition hover:shadow-blue-400 from-blue-50 to-blue-100 text-white shadow-lg p-5 rounded-xl">
       <Image src={image} alt={"project " + name} className="w-full shadow-sm" />
-      <h2 className="text-3xl font-semibold mt-5 font-sans text-blue-500">
+      <h2 className="text-3xl font-semibold mt-5 font-sans text-blue-900">
         {name}
       </h2>
       <div className="font-sans text-lg mt-3 text-slate-600">{desc}</div>
