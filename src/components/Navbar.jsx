@@ -27,9 +27,9 @@ function Navbar({ active = "About" }) {
       >
         <Link
           href={"/"}
-          className="text-3xl hidden sm:block text-white font-bold font-sans"
+          className="text-2xl hidden sm:block text-white font-bold font-sans"
         >
-          Web Portofolio
+          <span className="text-blue-400">Dodi</span> Portfolio
         </Link>
         <nav className="flex items-center w-full sm:w-auto text-sm sm:text-2xl justify-between gap-4 sm:gap-7">
           <MenuItem

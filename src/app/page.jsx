@@ -2,17 +2,19 @@
 import Image from "next/image";
 import { useEffect } from "react";
 import AOS from "aos";
+import "aos/dist/aos.css";
 import Navbar from "@/components/Navbar";
 import imgProfile from "@/assets/img/profile.png";
 import Link from "next/link";
 import { FaRegNewspaper } from "react-icons/fa6";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   useEffect(() => {
     AOS.init();
   });
   return (
-    <div className="relative">
+    <div className="relative mb-10">
       <Navbar />
       <main className="w-[95%] mx-auto mt-32 mb-10">
         <div
@@ -50,12 +52,13 @@ export default function Home() {
           <Image
             src={imgProfile}
             alt="profile"
-            className="w-96 object-contain"
+            className="w-96 scale-90 lg:scale-100 object-contain"
             data-aos="fade-right"
             data-aos-delay="700"
           />
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

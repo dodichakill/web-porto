@@ -8,15 +8,20 @@ function CardProject({
   icTech,
   image,
   link,
+  delay = 0,
 }) {
   return (
-    <div className="bg-gradient-to-tr shadow-blue-300 overflow-x-hidden transition hover:shadow-blue-400 from-blue-50 to-blue-100 text-white shadow-lg pt-3 p-4 rounded-xl">
+    <div
+      className="bg-gradient-to-tr shadow-blue-300 overflow-x-hidden transition hover:shadow-blue-400 from-blue-50 to-blue-100 text-white shadow-lg pt-3 p-4 rounded-xl"
+      data-aos="flip-down"
+      data-aos-delay={delay}
+    >
       <Image
         src={image}
         alt={"project " + name}
         className="w-full shadow-sm scale-110 rounded transition-all"
       />
-      <h2 className="text-3xl p-2 font-semibold mt-5 font-sans text-blue-900">
+      <h2 className="text-2xl p-2 font-semibold mt-5 font-sans text-blue-900">
         {name}
       </h2>
       <div className="font-sans p-2 text-lg text-slate-600">{desc}</div>
@@ -30,7 +35,7 @@ function CardProject({
             <FaEye /> View
           </Link>
         )}
-        <div className="mt-3 flex gap-5 text-xl sm:text-3xl text-blue-900 p-3">
+        <div className="mt-3 flex gap-5 overflow-x-auto text-xl sm:text-3xl text-blue-900 p-3">
           {icTech}
         </div>
       </div>

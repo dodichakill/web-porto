@@ -1,6 +1,7 @@
-import CardSkill from "@/components/CardSkill";
+"use client";
+
 import Navbar from "@/components/Navbar";
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "@/components/Container";
 import CardProject from "@/components/CardProject";
 import { FaBootstrap, FaCss3, FaHtml5, FaLaravel } from "react-icons/fa6";
@@ -8,6 +9,8 @@ import { SiFirebase, SiJavascript, SiTailwindcss } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
+import { SiTypescript } from "react-icons/si";
+import imgTechtitans from "@/assets/img/tech-titans.png";
 import imgLKP from "@/assets/img/lkp.png";
 import imgWy from "@/assets/img/wonderfuly.png";
 import imgNoc from "@/assets/img/noc.png";
@@ -17,15 +20,19 @@ import imgFoodinesia from "@/assets/img/foodinesia.png";
 import imgJaskipin from "@/assets/img/Djaskipin.png";
 import imgSisa from "@/assets/img/SISA.png";
 import imgExplorenias from "@/assets/img/explorenias.png";
+import TextTitle from "@/components/TextTitle";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
-export default function Skills() {
+export default function Projects() {
+  useEffect(() => {
+    Aos.init();
+  });
   return (
     <div className="pb-5 relative">
       <Navbar active="Projects" />
       <Container>
-        <h1 className="text-center mb-10 underline underline-offset-8 text-4xl font-sans font-semibold">
-          Projects
-        </h1>
+        <TextTitle text="Projects" />
 
         <div className="grid lg:grid-cols-3 gap-10 lg:mx-10 mb-5">
           <CardProject
@@ -37,10 +44,28 @@ export default function Skills() {
                 <TbBrandNextjs title="NextJS" />{" "}
                 <SiTailwindcss title="Tailwind" />{" "}
                 <SiFirebase title="Firebase" />{" "}
+                <SiTypescript title="Typescript" />{" "}
               </>
             }
             link={"https://nocturn-site.netlify.app/"}
+            delay={100}
           />
+
+          <CardProject
+            name="Tech Titans"
+            image={imgTechtitans}
+            desc="A landing page for Tech TItans to showcase their products and services."
+            icTech={
+              <>
+                <TbBrandNextjs title="NextJS" />{" "}
+                <SiTailwindcss title="Tailwind" />{" "}
+                <SiTypescript title="Typescript" />{" "}
+              </>
+            }
+            link={"https://nocturn-site.netlify.app/"}
+            delay={200}
+          />
+
           <CardProject
             name="Wonderful Yogyakarta"
             image={imgWy}
@@ -52,6 +77,7 @@ export default function Skills() {
               </>
             }
             link={"https://wonderful-yogyakarta.netlify.app/"}
+            delay={300}
           />
           <CardProject
             name="LKP & LPK Sekar"
@@ -64,6 +90,7 @@ export default function Skills() {
               </>
             }
             link={"https://lkpdanlpksekar.com/"}
+            delay={400}
           />
 
           <CardProject
@@ -78,6 +105,7 @@ export default function Skills() {
               </>
             }
             link={"https://www.tranquilmind.my.id/"}
+            delay={500}
           />
 
           <CardProject
@@ -88,9 +116,11 @@ export default function Skills() {
               <>
                 <TbBrandNextjs title="NextJS" />{" "}
                 <SiTailwindcss title="Tailwind" />{" "}
+                <SiTypescript title="Typescript" />{" "}
               </>
             }
             link={"https://www.explorenias.my.id/"}
+            delay={600}
           />
 
           <CardProject
@@ -104,6 +134,21 @@ export default function Skills() {
               </>
             }
             link={"https://foodinesia.netlify.app/"}
+            delay={700}
+          />
+
+          <CardProject
+            name="SISA mobile apps"
+            image={imgSisa}
+            desc="A waste bank mobile application project for Cirebon district government"
+            icTech={
+              <>
+                <SiJavascript title="Javascript" />{" "}
+                <RiReactjsLine title="React Native" />{" "}
+                <SiTailwindcss title="Nativewind" />
+              </>
+            }
+            delay={800}
           />
 
           <CardProject
@@ -118,6 +163,7 @@ export default function Skills() {
                 <SiTailwindcss title="Tailwind" />
               </>
             }
+            delay={900}
           />
 
           <CardProject
@@ -126,26 +172,14 @@ export default function Skills() {
             desc="A web Dashboard for Jaskipin Express company: overseas freight forwarding services "
             icTech={
               <>
-                <FaHtml5 title="HTML" /> <FaCss3 title="CSS" />{" "}
+                <FaHtml5 title="HTML" />
                 <SiJavascript title="Javascript" />{" "}
                 <RiReactjsLine title="React" />{" "}
                 <SiTailwindcss title="Tailwind" />
                 <FaBootstrap title="Bootstrap" />
               </>
             }
-          />
-
-          <CardProject
-            name="SISA mobile apps"
-            image={imgSisa}
-            desc="A waste bank mobile application project for Cirebon district government"
-            icTech={
-              <>
-                <SiJavascript title="Javascript" />{" "}
-                <RiReactjsLine title="React Native" />{" "}
-                <SiTailwindcss title="Nativewind" />
-              </>
-            }
+            delay={1000}
           />
         </div>
       </Container>
