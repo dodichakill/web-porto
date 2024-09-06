@@ -11,6 +11,7 @@ const MenuItem = ({ name, href, icon, active }) => {
       className={`flex flex-col sm:flex-row font-sans items-center gap-2  +
         ${active === name ? "font-semibold underline underline-offset-4" : ""}`}
       href={href}
+      prefetch
     >
       {icon} <span className="ml-2">{name}</span>
     </Link>
