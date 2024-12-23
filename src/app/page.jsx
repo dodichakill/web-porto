@@ -23,7 +23,7 @@ export default function Home() {
           data-aos-delay="300"
         >
           <section
-            className="sm:mx-10 sm:w-1/2"
+            className="sm:mx-10 lg:w-1/2"
             data-aos="fade-left"
             data-aos-delay="500"
           >
@@ -33,10 +33,10 @@ export default function Home() {
             </h1>
 
             <p className="mt-6 md:text-lg font-mono text-center md:text-left">
-              Software Engineer specializing in Frontend Development. Strong
-              analytical and creative problem-solving skills honed through years
-              of coding. IT Enthusiastic seeking to leverage expertise for
-              impactful solutions.
+              Software Engineer specializing in Frontend Development and a Web3
+              Enthusiast. Strong analytical and creative problem-solving skills
+              honed through years of coding. IT Enthusiastic seeking to leverage
+              expertise for impactful solutions.
             </p>
 
             <div className="flex items-center md:items-start">

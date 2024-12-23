@@ -53,8 +53,8 @@ function Navbar({ active = "About" }) {
           />
           <MenuItem
             active={active}
-            href={"/contact"}
-            name={"Contact"}
+            href={"/contacts"}
+            name={"Contacts"}
             icon={<BiSolidContact />}
           />
         </nav>

@@ -14,11 +14,11 @@ export default function Contact() {
   });
   return (
     <div className="pb-5 relative">
-      <Navbar active="Contact" />
+      <Navbar active="Contacts" />
       <Container>
         <TextTitle text="Contact Me" />
 
-        <div className="grid lg:grid-cols-2 gap-3 sm:gap-10 lg:mx-10 mb-5">
+        <div className="grid grid-cols-2 gap-3 sm:gap-10 lg:mx-10 mb-5">
           <CardSkill
             url="https://wa.me/6285524632537"
             icon={<FaPhone />}

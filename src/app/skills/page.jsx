@@ -12,7 +12,14 @@ import {
   FaFigma,
   FaGitAlt,
 } from "react-icons/fa6";
-import { SiFirebase, SiJavascript, SiTailwindcss } from "react-icons/si";
+import {
+  SiDart,
+  SiFirebase,
+  SiFlutter,
+  SiJavascript,
+  SiSolidity,
+  SiTailwindcss,
+} from "react-icons/si";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs, TbBrandVscode } from "react-icons/tb";
 import { GrMysql } from "react-icons/gr";
@@ -25,6 +32,68 @@ import Container from "@/components/Container";
 import Aos from "aos";
 import TextTitle from "@/components/TextTitle";
 
+const skills = [
+  {
+    icon: <FaHtml5 />,
+    name: "HTML",
+  },
+  {
+    icon: <FaCss3 />,
+    name: "CSS",
+  },
+  {
+    icon: <SiJavascript />,
+    name: "JavaScript",
+  },
+  {
+    icon: <SiTypescript />,
+    name: "TypeScript",
+  },
+  {
+    icon: <SiDart />,
+    name: "Dart",
+  },
+  {
+    icon: <FaSass />,
+    name: "SAAS",
+  },
+  {
+    icon: <SiTailwindcss />,
+    name: "TailwindCSS",
+  },
+  {
+    icon: <SiFlutter />,
+    name: "Flutter",
+  },
+  {
+    icon: <SiFirebase />,
+    name: "Firebase",
+  },
+  {
+    icon: <RiReactjsLine />,
+    name: "React",
+  },
+  {
+    icon: <TbBrandNextjs />,
+    name: "NextJS",
+  },
+  {
+    icon: <TbBrandVscode />,
+    name: "VSCode",
+  },
+  {
+    icon: <GrMysql />,
+    name: "MySQL",
+  },
+  {
+    icon: <DiScrum />,
+    name: "Scrum",
+  },
+  {
+    icon: <GrSystem />,
+    name: "System Analysis",
+  },
+];
 export default function Skills() {
   useEffect(() => {
     Aos.init();
@@ -33,43 +102,56 @@ export default function Skills() {
     <div className="pb-5">
       <Navbar active="Skills" />
       <Container>
-        <TextTitle text="Skills & Tools" />
+        {/* ===== Frontend Skills ===== */}
+        <TextTitle text="Frontend Skills" />
 
-        <div className="grid lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:mx-10 mb-5">
+        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:mx-10 mb-20">
           <CardSkill icon={<FaHtml5 />} name={"HTML"} delay={100} />
           <CardSkill icon={<FaCss3 />} name={"CSS"} delay={200} />
-          <CardSkill icon={<SiJavascript />} name={"JavaSript"} delay={300} />
-          <CardSkill icon={<SiTypescript />} name={"TypeScript"} delay={400} />
+          <CardSkill icon={<SiJavascript />} name={"JavaScript"} delay={300} />
           <CardSkill icon={<FaSass />} name={"SAAS"} delay={500} />
           <CardSkill
             icon={<SiTailwindcss />}
             name={"TailwindCSS"}
             delay={600}
           />
-          <CardSkill icon={<FaBootstrap />} name={"Bootstrap"} delay={700} />
-          <CardSkill icon={<RiReactjsLine />} name={"ReactJS"} delay={800} />
+          <CardSkill icon={<SiFlutter />} name={"Flutter"} delay={700} />
+          <CardSkill icon={<FaBootstrap />} name={"Bootstrap"} delay={800} />
+          <CardSkill icon={<RiReactjsLine />} name={"ReactJS"} delay={900} />
           <CardSkill
             icon={<RiReactjsLine />}
             name={"React Native"}
             delay={900}
           />
           <CardSkill icon={<TbBrandNextjs />} name={"NextJS"} delay={1000} />
-          <CardSkill icon={<FaPhp />} name={"PHP"} delay={1100} />
-          <CardSkill icon={<FaLaravel />} name={"Laravel"} delay={1200} />
-          <CardSkill icon={<GrMysql />} name={"MySQL"} delay={1300} />
-          <CardSkill icon={<SiFirebase />} name={"Firebase"} delay={1400} />
-          <CardSkill icon={<FaFigma />} name={"Figma"} delay={1500} />
+        </div>
+
+        {/* ===== Backend Skills ===== */}
+
+        <TextTitle text="Backend Skills" />
+        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:mx-10 mb-20">
+          <CardSkill icon={<FaPhp />} name={"PHP"} delay={500} />
+          <CardSkill icon={<FaLaravel />} name={"Laravel"} delay={600} />
+          <CardSkill icon={<SiSolidity />} name={"Solidity"} delay={700} />
+          <CardSkill icon={<GrMysql />} name={"MySQL"} delay={800} />
+          <CardSkill icon={<SiFirebase />} name={"Firebase"} delay={900} />
+        </div>
+
+        {/* ===== Tools Skills ===== */}
+        <TextTitle text="Tools" />
+        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:mx-10 mb-5">
+          <CardSkill icon={<FaFigma />} name={"Figma"} delay={500} />
           <CardSkill
             icon={<FaGitAlt />}
-            name={"Github & Gitlab"}
-            delay={1600}
+            name={"Git version control"}
+            delay={600}
           />
-          <CardSkill icon={<TbBrandVscode />} name={"VSCode"} delay={1700} />
-          <CardSkill icon={<DiScrum />} name={"Jira SCRUM"} delay={1800} />
+          <CardSkill icon={<TbBrandVscode />} name={"VSCode"} delay={700} />
+          <CardSkill icon={<DiScrum />} name={"Jira SCRUM"} delay={800} />
           <CardSkill
             icon={<GrSystem />}
-            name={"Linux & Windows"}
-            delay={1900}
+            name={"MacOS, Linux, Windows"}
+            delay={900}
           />
         </div>
       </Container>

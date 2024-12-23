@@ -15,6 +15,7 @@ import imgLKP from "@/assets/img/lkp.png";
 import imgWy from "@/assets/img/wonderfuly.png";
 import imgNoc from "@/assets/img/noc.png";
 import imgTranquilmind from "@/assets/img/tranquilmind.png";
+import imgAiress from "@/assets/img/Airess.png";
 import imgHipmi from "@/assets/img/hipmi.png";
 import imgFoodinesia from "@/assets/img/foodinesia.png";
 import imgJaskipin from "@/assets/img/Djaskipin.png";
@@ -35,6 +36,21 @@ export default function Projects() {
         <TextTitle text="Projects" />
 
         <div className="grid lg:grid-cols-3 gap-10 lg:mx-10 mb-5">
+          <CardProject
+            name="Airess"
+            image={imgAiress}
+            desc="Airess is a platform or tool to connect musicians with music producers."
+            icTech={
+              <>
+                <TbBrandNextjs title="NextJS" />{" "}
+                <SiTailwindcss title="Tailwind" />{" "}
+                <SiTypescript title="Typescript" />{" "}
+              </>
+            }
+            link={"https://airess-new.vercel.app/"}
+            delay={100}
+          />
+
           <CardProject
             name="Nocturn"
             image={imgNoc}
@@ -62,7 +78,7 @@ export default function Projects() {
                 <SiTypescript title="Typescript" />{" "}
               </>
             }
-            link={"https://nocturn-site.netlify.app/"}
+            link={"https://tech-titans-site.vercel.app/"}
             delay={200}
           />
 
@@ -79,19 +95,6 @@ export default function Projects() {
             link={"https://wonderful-yogyakarta.netlify.app/"}
             delay={300}
           />
-          <CardProject
-            name="LKP & LPK Sekar"
-            image={imgLKP}
-            desc="An official web project of LKP & LKP Sekar in tegal city, central java."
-            icTech={
-              <>
-                <FaLaravel title="Laravel" /> <SiTailwindcss title="Tailwind" />{" "}
-                <GrMysql title="MySQL" /> <RiReactjsLine title="React" />{" "}
-              </>
-            }
-            link={"https://lkpdanlpksekar.com/"}
-            delay={400}
-          />
 
           <CardProject
             name="TranquilMind id"
@@ -104,7 +107,7 @@ export default function Projects() {
                 <SiFirebase title="Firebase" />{" "}
               </>
             }
-            link={"https://www.tranquilmind.my.id/"}
+            link={"https://tranquil-mind-id.vercel.app/"}
             delay={500}
           />
 
@@ -119,7 +122,7 @@ export default function Projects() {
                 <SiTypescript title="Typescript" />{" "}
               </>
             }
-            link={"https://www.explorenias.my.id/"}
+            link={"https://explore-nias.vercel.app/"}
             delay={600}
           />
 
@@ -135,6 +138,22 @@ export default function Projects() {
             }
             link={"https://foodinesia.netlify.app/"}
             delay={700}
+          />
+
+          <CardProject
+            name="LKP & LPK Sekar"
+            image={imgLKP}
+            desc="An official web project of LKP & LKP Sekar in tegal city, central java."
+            icTech={
+              <>
+                <FaHtml5 title="HTML" /> <FaCss3 title="CSS" />{" "}
+                <SiJavascript title="Javascript" />
+                <FaLaravel title="Laravel" /> <SiTailwindcss title="Tailwind" />{" "}
+                <GrMysql title="MySQL" /> <RiReactjsLine title="React" />{" "}
+              </>
+            }
+            // link={"https://lkpdanlpksekar.com/"}
+            delay={400}
           />
 
           <CardProject
