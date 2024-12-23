@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from "@/components/Navbar";
-import imgProfile from "@/assets/img/profile.png";
+import imgProfile from "@/assets/img/profile.webp";
 import Link from "next/link";
 import { FaRegNewspaper } from "react-icons/fa6";
 import Footer from "@/components/Footer";
