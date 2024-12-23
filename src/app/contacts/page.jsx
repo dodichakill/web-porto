@@ -3,7 +3,13 @@ import CardSkill from "@/components/CardSkill";
 import Navbar from "@/components/Navbar";
 import React, { useEffect } from "react";
 import Container from "@/components/Container";
-import { FaEnvelope, FaGithub, FaLinkedin, FaPhone } from "react-icons/fa6";
+import {
+  FaEnvelope,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaPhone,
+} from "react-icons/fa6";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import TextTitle from "@/components/TextTitle";
@@ -41,6 +47,12 @@ export default function Contact() {
             url="https://github.com/dodichakill"
             icon={<FaGithub />}
             name={"dodichakill"}
+            delay={500}
+          />
+          <CardSkill
+            url="https://www.instagram.com/hrl9127/"
+            icon={<FaInstagram />}
+            name={"hrl9127"}
             delay={500}
           />
         </div>
