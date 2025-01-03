@@ -105,7 +105,7 @@ export default function Skills() {
         {/* ===== Frontend Skills ===== */}
         <TextTitle text="Frontend Skills" />
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:mx-10 mb-20">
+        <div className="grid lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:mx-10 mb-20">
           <CardSkill icon={<FaHtml5 />} name={"HTML"} delay={100} />
           <CardSkill icon={<FaCss3 />} name={"CSS"} delay={200} />
           <CardSkill icon={<SiJavascript />} name={"JavaScript"} delay={300} />
@@ -129,7 +129,7 @@ export default function Skills() {
         {/* ===== Backend Skills ===== */}
 
         <TextTitle text="Backend Skills" />
-        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:mx-10 mb-20">
+        <div className="grid lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:mx-10 mb-20">
           <CardSkill icon={<FaPhp />} name={"PHP"} delay={500} />
           <CardSkill icon={<FaLaravel />} name={"Laravel"} delay={600} />
           <CardSkill icon={<SiSolidity />} name={"Solidity"} delay={700} />
@@ -139,7 +139,7 @@ export default function Skills() {
 
         {/* ===== Tools Skills ===== */}
         <TextTitle text="Tools" />
-        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:mx-10 mb-5">
+        <div className="grid lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:mx-10 mb-5">
           <CardSkill icon={<FaFigma />} name={"Figma"} delay={500} />
           <CardSkill
             icon={<FaGitAlt />}
