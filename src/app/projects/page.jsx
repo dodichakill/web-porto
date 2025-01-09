@@ -155,6 +155,51 @@ export default function Projects() {
             // link={"https://lkpdanlpksekar.com/"}
             delay={400}
           />
+
+          <CardProject
+            name="SISA mobile apps"
+            image={imgSisa}
+            desc="A waste bank mobile application project for Cirebon district government"
+            icTech={
+              <>
+                <SiJavascript title="Javascript" />{" "}
+                <RiReactjsLine title="React Native" />{" "}
+                <SiTailwindcss title="Nativewind" />
+              </>
+            }
+            delay={800}
+          />
+
+          <CardProject
+            name="Ticketing Hipmi"
+            image={imgHipmi}
+            desc="A web ticketing system for music concert : hiphiphura fest 2023 Cirebon "
+            icTech={
+              <>
+                <FaHtml5 title="HTML" /> <FaCss3 title="CSS" />{" "}
+                <SiJavascript title="Javascript" />{" "}
+                <RiReactjsLine title="React" />{" "}
+                <SiTailwindcss title="Tailwind" />
+              </>
+            }
+            delay={900}
+          />
+
+          <CardProject
+            name="Dashboard Jaskipin"
+            image={imgJaskipin}
+            desc="A web Dashboard for Jaskipin Express company: overseas freight forwarding services "
+            icTech={
+              <>
+                <FaHtml5 title="HTML" />
+                <SiJavascript title="Javascript" />{" "}
+                <RiReactjsLine title="React" />{" "}
+                <SiTailwindcss title="Tailwind" />
+                <FaBootstrap title="Bootstrap" />
+              </>
+            }
+            delay={1000}
+          />
         </div>
       </Container>
     </div>
