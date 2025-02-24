@@ -2,11 +2,11 @@
 import Navbar from "@/components/Navbar";
 import React, { useEffect } from "react";
 import Container from "@/components/Container";
-import Aos from "aos";
-import "aos/dist/aos.css";
 import SectionWorkExp from "./SectionWorkExp";
 import SectionEducation from "./SectionEducation";
 import SectionAwards from "./SectionAwards";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function Contact() {
   useEffect(() => {

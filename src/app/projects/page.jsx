@@ -29,9 +29,9 @@ import imgJaskipin from "@/assets/img/Djaskipin.webp";
 import imgSisa from "@/assets/img/SISA.webp";
 import imgExplorenias from "@/assets/img/explorenias.webp";
 import TextTitle from "@/components/TextTitle";
+import { FaProjectDiagram } from "react-icons/fa";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { FaProjectDiagram } from "react-icons/fa";
 
 export default function Projects() {
   useEffect(() => {

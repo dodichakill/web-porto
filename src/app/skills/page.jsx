@@ -26,13 +26,12 @@ import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs, TbBrandVscode } from "react-icons/tb";
 import { GrMysql } from "react-icons/gr";
 import { DiScrum } from "react-icons/di";
-import "aos/dist/aos.css";
 import { GrSystem } from "react-icons/gr";
-
 import Container from "@/components/Container";
-import Aos from "aos";
 import TextTitle from "@/components/TextTitle";
 import { FaPaintBrush, FaTools } from "react-icons/fa";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 // const skills = [
 //   {
