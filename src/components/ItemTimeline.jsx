@@ -7,7 +7,9 @@ const ItemTimeline = ({ date, title, description }) => {
       <time class="mb-2 text-sm md:text-md font-normal leading-none text-blue-700">
         {date}
       </time>
-      <h3 class="text-lg md:text-xl font-semibold text-blue-900 ">{title}</h3>
+      <h3 class="text-lg md:text-xl font-semibold text-blue-900 mb-2">
+        {title}
+      </h3>
       <p class="mb-4 text-base font-normal text-slate-600">{description}</p>
     </li>
   );

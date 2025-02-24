@@ -12,13 +12,6 @@ function Container({ children }) {
         data-aos-delay="300"
       >
         {children}
-
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="flex items-center justify-center text-xl text-blue-400 shadow-md sm:hidden fixed right-10 bottom-10 bg-white rounded-xl p-3 md:p-5"
-        >
-          <FaArrowAltCircleUp />
-        </button>
       </div>
       <Footer />
     </>
