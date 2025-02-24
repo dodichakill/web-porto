@@ -1,7 +1,7 @@
 import iec23 from "@/assets/img/awards/IEC 23 - 1.webp";
 import idnIt from "@/assets/img/awards/IDNITFEST - 2.webp";
 import fesifo from "@/assets/img/awards/FESIFO - 3.webp";
-import crowdIt from "@/assets/img/awards/CROWDIT - 3.webp";
+import crowdIt from "@/assets/img/awards/CrowdIT - 3.webp";
 import kmipn from "@/assets/img/awards/KMIPN6.webp";
 import unisnu from "@/assets/img/awards/Unisnu - Finalis.webp";
 import fex from "@/assets/img/awards/Dicoding - FE.webp";
