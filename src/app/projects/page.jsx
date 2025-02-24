@@ -5,7 +5,13 @@ import React, { useEffect } from "react";
 import Container from "@/components/Container";
 import CardProject from "@/components/CardProject";
 import { FaBootstrap, FaCss3, FaHtml5, FaLaravel } from "react-icons/fa6";
-import { SiFirebase, SiJavascript, SiTailwindcss } from "react-icons/si";
+import {
+  SiFirebase,
+  SiFlask,
+  SiFlutter,
+  SiJavascript,
+  SiTailwindcss,
+} from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -16,6 +22,7 @@ import imgWy from "@/assets/img/wonderfuly.webp";
 import imgNoc from "@/assets/img/noc.webp";
 import imgTranquilmind from "@/assets/img/tranquilmind.webp";
 import imgAiress from "@/assets/img/Airess.webp";
+import imgAgrolynWeb from "@/assets/img/webagrolyn.webp";
 import imgHipmi from "@/assets/img/hipmi.webp";
 import imgFoodinesia from "@/assets/img/foodinesia.webp";
 import imgJaskipin from "@/assets/img/Djaskipin.webp";
@@ -24,18 +31,34 @@ import imgExplorenias from "@/assets/img/explorenias.webp";
 import TextTitle from "@/components/TextTitle";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { FaProjectDiagram } from "react-icons/fa";
 
 export default function Projects() {
   useEffect(() => {
-    Aos.init();
+    Aos.init({
+      once: true,
+    });
   });
   return (
     <div className="pb-5 relative">
       <Navbar active="Projects" />
       <Container>
-        <TextTitle text="Projects" />
+        <TextTitle icon={<FaProjectDiagram />} text="Projects" />
 
         <div className="grid lg:grid-cols-3 gap-10 lg:mx-10 mb-5">
+          <CardProject
+            name="Web Agrolyn"
+            image={imgAgrolynWeb}
+            desc="Web agrolyn is a future agriculture smart solution website project."
+            icTech={
+              <>
+                <SiFlutter title="Flutter" /> <GrMysql title="MySQL" />
+                <SiFlask title="Flask" />
+              </>
+            }
+            delay={100}
+            link="https://web.agrolyn.online/"
+          />
           <CardProject
             name="Airess"
             image={imgAiress}
@@ -47,7 +70,6 @@ export default function Projects() {
                 <SiTypescript title="Typescript" />{" "}
               </>
             }
-            link={"https://airess-new.vercel.app/"}
             delay={100}
           />
 
@@ -146,18 +168,16 @@ export default function Projects() {
             desc="An official web project of LKP & LKP Sekar in tegal city, central java."
             icTech={
               <>
-                <FaHtml5 title="HTML" /> <FaCss3 title="CSS" />{" "}
-                <SiJavascript title="Javascript" />
                 <FaLaravel title="Laravel" /> <SiTailwindcss title="Tailwind" />{" "}
                 <GrMysql title="MySQL" /> <RiReactjsLine title="React" />{" "}
               </>
             }
-            // link={"https://lkpdanlpksekar.com/"}
+            link={"https://lkpdanlpksekar.com/"}
             delay={400}
           />
 
           <CardProject
-            name="SISA mobile apps"
+            name="SISA mobile app"
             image={imgSisa}
             desc="A waste bank mobile application project for Cirebon district government"
             icTech={

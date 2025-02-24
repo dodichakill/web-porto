@@ -11,8 +11,10 @@ import {
   FaLaravel,
   FaFigma,
   FaGitAlt,
+  FaServer,
 } from "react-icons/fa6";
 import {
+  SiAndroidstudio,
   SiDart,
   SiFirebase,
   SiFlutter,
@@ -31,79 +33,82 @@ import { SiTypescript } from "react-icons/si";
 import Container from "@/components/Container";
 import Aos from "aos";
 import TextTitle from "@/components/TextTitle";
+import { FaPaintBrush, FaTools } from "react-icons/fa";
 
-const skills = [
-  {
-    icon: <FaHtml5 />,
-    name: "HTML",
-  },
-  {
-    icon: <FaCss3 />,
-    name: "CSS",
-  },
-  {
-    icon: <SiJavascript />,
-    name: "JavaScript",
-  },
-  {
-    icon: <SiTypescript />,
-    name: "TypeScript",
-  },
-  {
-    icon: <SiDart />,
-    name: "Dart",
-  },
-  {
-    icon: <FaSass />,
-    name: "SAAS",
-  },
-  {
-    icon: <SiTailwindcss />,
-    name: "TailwindCSS",
-  },
-  {
-    icon: <SiFlutter />,
-    name: "Flutter",
-  },
-  {
-    icon: <SiFirebase />,
-    name: "Firebase",
-  },
-  {
-    icon: <RiReactjsLine />,
-    name: "React",
-  },
-  {
-    icon: <TbBrandNextjs />,
-    name: "NextJS",
-  },
-  {
-    icon: <TbBrandVscode />,
-    name: "VSCode",
-  },
-  {
-    icon: <GrMysql />,
-    name: "MySQL",
-  },
-  {
-    icon: <DiScrum />,
-    name: "Scrum",
-  },
-  {
-    icon: <GrSystem />,
-    name: "System Analysis",
-  },
-];
+// const skills = [
+//   {
+//     icon: <FaHtml5 />,
+//     name: "HTML",
+//   },
+//   {
+//     icon: <FaCss3 />,
+//     name: "CSS",
+//   },
+//   {
+//     icon: <SiJavascript />,
+//     name: "JavaScript",
+//   },
+//   {
+//     icon: <SiTypescript />,
+//     name: "TypeScript",
+//   },
+//   {
+//     icon: <SiDart />,
+//     name: "Dart",
+//   },
+//   {
+//     icon: <FaSass />,
+//     name: "SASS",
+//   },
+//   {
+//     icon: <SiTailwindcss />,
+//     name: "TailwindCSS",
+//   },
+//   {
+//     icon: <SiFlutter />,
+//     name: "Flutter",
+//   },
+//   {
+//     icon: <SiFirebase />,
+//     name: "Firebase",
+//   },
+//   {
+//     icon: <RiReactjsLine />,
+//     name: "React",
+//   },
+//   {
+//     icon: <TbBrandNextjs />,
+//     name: "NextJS",
+//   },
+//   {
+//     icon: <TbBrandVscode />,
+//     name: "VSCode",
+//   },
+//   {
+//     icon: <GrMysql />,
+//     name: "MySQL",
+//   },
+//   {
+//     icon: <DiScrum />,
+//     name: "Scrum",
+//   },
+//   {
+//     icon: <GrSystem />,
+//     name: "System Analysis",
+//   },
+// ];
 export default function Skills() {
   useEffect(() => {
-    Aos.init();
+    Aos.init({
+      once: true,
+    });
   });
   return (
     <div className="pb-5">
       <Navbar active="Skills" />
       <Container>
         {/* ===== Frontend Skills ===== */}
-        <TextTitle text="Frontend Skills" />
+        <TextTitle icon={<FaPaintBrush />} text="Frontend Skills" />
 
         <div className="grid lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:mx-10 mb-20">
           <CardSkill icon={<FaHtml5 />} name={"HTML"} delay={100} />
@@ -128,7 +133,7 @@ export default function Skills() {
 
         {/* ===== Backend Skills ===== */}
 
-        <TextTitle text="Backend Skills" />
+        <TextTitle icon={<FaServer />} text="Backend Skills" />
         <div className="grid lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:mx-10 mb-20">
           <CardSkill icon={<FaPhp />} name={"PHP"} delay={500} />
           <CardSkill icon={<FaLaravel />} name={"Laravel"} delay={600} />
@@ -138,18 +143,25 @@ export default function Skills() {
         </div>
 
         {/* ===== Tools Skills ===== */}
-        <TextTitle text="Tools" />
+        <TextTitle icon={<FaTools />} text="Tools" />
         <div className="grid lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:mx-10 mb-5">
-          <CardSkill icon={<FaFigma />} name={"Figma"} delay={500} />
+          <CardSkill icon={<FaFigma />} name={"Figma"} delay={400} />
           <CardSkill
             icon={<FaGitAlt />}
             name={"Git version control"}
-            delay={600}
+            isSmall
+            delay={500}
           />
-          <CardSkill icon={<TbBrandVscode />} name={"VSCode"} delay={700} />
+          <CardSkill icon={<TbBrandVscode />} name={"VSCode"} delay={600} />
+          <CardSkill
+            icon={<SiAndroidstudio />}
+            name={"Android Studio"}
+            delay={700}
+          />
           <CardSkill icon={<DiScrum />} name={"Jira SCRUM"} delay={800} />
           <CardSkill
             icon={<GrSystem />}
+            isSmall
             name={"MacOS, Linux, Windows"}
             delay={900}
           />

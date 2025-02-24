@@ -11,12 +11,14 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   useEffect(() => {
-    AOS.init();
+    Aos.init({
+      once: true,
+    });
   });
   return (
     <div className="relative mb-10">
       <Navbar />
-      <main className="w-[95%] mx-auto mt-32 mb-10">
+      <main className="w-[95%] mx-auto mt-5 md:mt-10 mb-10">
         <div
           className="flex flex-col-reverse lg:flex-row bg-gradient-to-tr from-sky-500 shadow-xl shadow-blue-300 to-blue-600 rounded-xl text-white gap-10 p-5 pb-10 lg:px-10 lg:py-24 justify-evenly items-center"
           data-aos="fade-up"
