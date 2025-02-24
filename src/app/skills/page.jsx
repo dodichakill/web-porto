@@ -1,4 +1,5 @@
 "use client";
+
 import CardSkill from "@/components/CardSkill";
 import Navbar from "@/components/Navbar";
 import React, { useEffect } from "react";
@@ -15,7 +16,6 @@ import {
 } from "react-icons/fa6";
 import {
   SiAndroidstudio,
-  SiDart,
   SiFirebase,
   SiFlutter,
   SiJavascript,
@@ -28,7 +28,6 @@ import { GrMysql } from "react-icons/gr";
 import { DiScrum } from "react-icons/di";
 import "aos/dist/aos.css";
 import { GrSystem } from "react-icons/gr";
-import { SiTypescript } from "react-icons/si";
 
 import Container from "@/components/Container";
 import Aos from "aos";
