@@ -49,7 +49,7 @@ export default function Projects() {
           <CardProject
             name="Web Agrolyn"
             image={imgAgrolynWeb}
-            desc="Web agrolyn is a future agriculture smart solution website project."
+            desc="Web Agrolyn is a future agriculture smart solution website project with AI prediction & assistant."
             icTech={
               <>
                 <SiFlutter title="Flutter" /> <GrMysql title="MySQL" />
@@ -62,7 +62,7 @@ export default function Projects() {
           <CardProject
             name="Airess"
             image={imgAiress}
-            desc="Airess is a platform or tool to connect musicians with music producers."
+            desc="Airess is a web platform or tool to connect musicians with music producers and other industry professionals."
             icTech={
               <>
                 <TbBrandNextjs title="NextJS" />{" "}
@@ -76,7 +76,7 @@ export default function Projects() {
           <CardProject
             name="Nocturn"
             image={imgNoc}
-            desc="Nocturn is an Web app designed to help you improve your sleep quality."
+            desc="Nocturn is a web app designed to relax and help you improve your sleep quality."
             icTech={
               <>
                 <TbBrandNextjs title="NextJS" />{" "}
@@ -92,7 +92,7 @@ export default function Projects() {
           <CardProject
             name="Tech Titans"
             image={imgTechtitans}
-            desc="A landing page for Tech TItans to showcase their products and services."
+            desc="A web landing page for Tech Titans to showcase their products and services."
             icTech={
               <>
                 <TbBrandNextjs title="NextJS" />{" "}
@@ -107,7 +107,7 @@ export default function Projects() {
           <CardProject
             name="Wonderful Yogyakarta"
             image={imgWy}
-            desc="a website to introduce culture, tourism & culinary in yogyakarta."
+            desc="A website to introduce culture, tourism & culinary in Yogyakarta."
             icTech={
               <>
                 <FaHtml5 title="HTML" /> <FaCss3 title="CSS" />{" "}
@@ -121,7 +121,7 @@ export default function Projects() {
           <CardProject
             name="TranquilMind id"
             image={imgTranquilmind}
-            desc="A web project about mental health, meditation, professional help and podcasts."
+            desc="A website to introduce culture, tourism & culinary in Yogyakarta."
             icTech={
               <>
                 <TbBrandNextjs title="NextJS" />{" "}
@@ -136,7 +136,7 @@ export default function Projects() {
           <CardProject
             name="Explore Nias"
             image={imgExplorenias}
-            desc="a web project to introduce the culture, culinary and tourism of Nias Island."
+            desc="A web project to introduce the culture, culinary, and tourism of Nias Island."
             icTech={
               <>
                 <TbBrandNextjs title="NextJS" />{" "}
@@ -151,7 +151,7 @@ export default function Projects() {
           <CardProject
             name="Foodinesia"
             image={imgFoodinesia}
-            desc="A web project about healthy food community & healthy food blog. "
+            desc="A web project about a healthy food community & healthy food blog."
             icTech={
               <>
                 <FaHtml5 title="HTML" /> <FaCss3 title="CSS" />{" "}
@@ -165,7 +165,7 @@ export default function Projects() {
           <CardProject
             name="LKP & LPK Sekar"
             image={imgLKP}
-            desc="An official web project of LKP & LKP Sekar in tegal city, central java."
+            desc="An official web project of LKP & LKP Sekar in Tegal City, Central Java."
             icTech={
               <>
                 <FaLaravel title="Laravel" /> <SiTailwindcss title="Tailwind" />{" "}
@@ -179,7 +179,7 @@ export default function Projects() {
           <CardProject
             name="SISA mobile app"
             image={imgSisa}
-            desc="A waste bank mobile application project for Cirebon district government"
+            desc="A waste bank mobile application project for the Cirebon district government"
             icTech={
               <>
                 <SiJavascript title="Javascript" />{" "}
@@ -193,7 +193,7 @@ export default function Projects() {
           <CardProject
             name="Ticketing Hipmi"
             image={imgHipmi}
-            desc="A web ticketing system for music concert : hiphiphura fest 2023 Cirebon "
+            desc="A web ticketing system for the music concert: hiphiphura fest 2023 Cirebon"
             icTech={
               <>
                 <FaHtml5 title="HTML" /> <FaCss3 title="CSS" />{" "}
@@ -208,7 +208,7 @@ export default function Projects() {
           <CardProject
             name="Dashboard Jaskipin"
             image={imgJaskipin}
-            desc="A web Dashboard for Jaskipin Express company: overseas freight forwarding services "
+            desc="A web dashboard for Jaskipin Express company: overseas freight forwarding services "
             icTech={
               <>
                 <FaHtml5 title="HTML" />

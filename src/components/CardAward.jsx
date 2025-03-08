@@ -5,7 +5,7 @@ import { HiTrophy } from "react-icons/hi2";
 
 const CardAward = ({ title, isCompetition, description, image, delay }) => {
   return (
-    <div className="parent p-5 rounded-xl relative w-full md:w-96 h-56 bg-blue-500 box-border group">
+    <div className="parent p-5 rounded-xl relative w-full md:w-[23rem] h-[14rem] bg-blue-500 box-border group">
       <Image
         objectFit="cover"
         objectPosition="center"
