@@ -62,7 +62,7 @@ export default function Projects() {
           <CardProject
             name="Airess"
             image={imgAiress}
-            desc="Airess is a web platform or tool to connect musicians with music producers and other industry professionals."
+            desc="Airess is a web platform or tool to connect musicians with music producers."
             icTech={
               <>
                 <TbBrandNextjs title="NextJS" />{" "}
