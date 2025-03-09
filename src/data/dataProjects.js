@@ -182,7 +182,7 @@ export const dataProjects = [
   {
     name: "Ticketing Hipmi",
     image: imgHipmi,
-    desc: "A ticketing mobile application project for Hipmi in Tegal City, Central Java.",
+    desc: "Mobile ticketing application project for Hipmi concert in Cirebon City, West Java.",
     icTech: (
       <>
         <SiJavascript title="Javascript" />{" "}
