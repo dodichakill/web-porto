@@ -32,6 +32,7 @@ import TextTitle from "@/components/TextTitle";
 import { FaProjectDiagram } from "react-icons/fa";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import dataProjects from "@/data/dataProjects";
 
 export default function Projects() {
   useEffect(() => {
