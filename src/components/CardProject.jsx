@@ -12,12 +12,12 @@ function CardProject({
   image,
   type = "Web",
   link,
-  delay = 0,
+  delay,
 }) {
   return (
     <div
       className="bg-gradient-to-tr shadow-blue-300 overflow-x-hidden  from-blue-400 to-blue-500 text-white shadow-lg pt-3 p-4 rounded-xl group transition-all"
-      data-aos="flip-down group"
+      data-aos="flip-down"
       data-aos-delay={delay}
     >
       <div className="w-full h-44 relative">

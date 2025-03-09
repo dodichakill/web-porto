@@ -13,7 +13,7 @@ const SectionWorkExp = () => {
         data-aos="fade-down"
         data-aos-delay="800"
       >
-        <ol class="relative border-s-2 border-blue-400">
+        <ol className="relative border-s-2 border-blue-400">
           {dataWorkExperiences.map((item) => (
             <ItemTimeline
               date={item.date}

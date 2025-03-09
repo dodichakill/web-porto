@@ -30,7 +30,7 @@ export default function Projects() {
               image={project.image}
               desc={project.desc}
               icTech={project.icTech}
-              delay={index * 150}
+              delay={index <= 6 ? index * 200 : index * 100}
               type={project.type}
               link={project.link}
             />
