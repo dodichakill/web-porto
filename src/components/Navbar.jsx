@@ -10,16 +10,16 @@ function Navbar({ active = "About" }) {
     <>
       <header
         data-aos="fade-down"
-        className="w-[95%] top-0 right-0 left-0 z-50 sticky mx-auto py-6 px-8 justify-between rounded-xl box-border my-5 flex bg-blue-950 text-white items-center shadow-lg"
+        className="w-[95%] top-0 right-0 left-0 z-50 sticky mx-auto py-6 px-8 justify-between rounded-xl box-border my-5 flex bg-gradient-to-r from-blue-800 to-blue-950 text-white items-center shadow-xl shadow-blue-500/60"
         id="top"
       >
         <Link
           href={"/"}
-          className="text-2xl hidden sm:block text-white font-bold font-sans"
+          className="text-2xl hidden sm:block text-blue-400 font-bold font-sans"
           data-aos="fade-right"
           data-aos-delay="200"
         >
-          <span className="text-blue-400">Dodi</span> Portfolio
+          <span className="text-white">Dodi</span> Portfolio
         </Link>
         <nav className="flex items-center w-full sm:w-auto text-sm sm:text-2xl justify-between gap-4 sm:gap-7 box-border">
           <ItemMenu

@@ -4,7 +4,7 @@ import React from "react";
 const ItemMenu = ({ name, href, icon, active, delay }) => {
   return (
     <Link
-      className={`flex flex-col sm:flex-row font-sans items-center box-border gap-2  +
+      className={`flex flex-col sm:flex-row font-sans items-center box-border gap-2 hover:underline hover:underline-offset-4 +
         ${active === name ? "font-semibold underline underline-offset-4" : ""}`}
       href={href}
       prefetch
