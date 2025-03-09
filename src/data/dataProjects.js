@@ -5,10 +5,12 @@ import imgNoc from "@/assets/img/noc.webp";
 import imgTranquilmind from "@/assets/img/tranquilmind.webp";
 import imgAiress from "@/assets/img/Airess.webp";
 import imgAgrolynWeb from "@/assets/img/webagrolyn.webp";
+import imgAgrolynM from "@/assets/img/agrolyn-m.webp";
 import imgHipmi from "@/assets/img/hipmi.webp";
 import imgFoodinesia from "@/assets/img/foodinesia.webp";
 import imgJaskipin from "@/assets/img/Djaskipin.webp";
 import imgSisa from "@/assets/img/SISA.webp";
+import imgMF from "@/assets/img/myfarmer.webp";
 import imgExplorenias from "@/assets/img/explorenias.webp";
 import {
   SiFirebase,
@@ -19,7 +21,7 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
-import { TbBrandNextjs } from "react-icons/tb";
+import { TbBrandFigma, TbBrandNextjs } from "react-icons/tb";
 import { FaCss3, FaHtml5, FaLaravel } from "react-icons/fa6";
 import { RiReactjsLine } from "react-icons/ri";
 
@@ -27,7 +29,7 @@ export const dataProjects = [
   {
     name: "Web Agrolyn",
     image: imgAgrolynWeb,
-    desc: "Web Agrolyn is a future agriculture smart solution website project with AI prediction & assistant.",
+    desc: "Web Agrolyn is a future agriculture smart solution website project with AI prediction & assistant. (lite version)",
     icTech: (
       <>
         <SiFlutter title="Flutter" /> <GrMysql title="MySQL" />{" "}
@@ -36,6 +38,18 @@ export const dataProjects = [
     ),
     link: "https://web.agrolyn.online/",
     type: "Web",
+  }, // web agrolyn
+  {
+    name: "Agrolyn Mobile app",
+    image: imgAgrolynM,
+    desc: "Agrolyn Mobile app is a future agriculture smart solution website project with AI prediction & assistant. (full version)",
+    icTech: (
+      <>
+        <SiFlutter title="Flutter" /> <GrMysql title="MySQL" />{" "}
+        <SiFlask title="Flask" />{" "}
+      </>
+    ),
+    type: "Mobile",
   }, // web agrolyn
   {
     name: "Nocturn",
@@ -140,6 +154,17 @@ export const dataProjects = [
       </>
     ),
     type: "Web",
+  }, // airess
+  {
+    name: "MyFarmer",
+    image: imgMF,
+    desc: "A mobile application design about E-Commerce & Agriculture Education.",
+    icTech: (
+      <>
+        <TbBrandFigma title="Figma" />
+      </>
+    ),
+    type: "UI",
   }, // airess
   {
     name: "SISA mobile app",

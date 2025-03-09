@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FaEye } from "react-icons/fa6";
 import { TbWorld } from "react-icons/tb";
 import { CiMobile3 } from "react-icons/ci";
+import { MdDesignServices } from "react-icons/md";
 
 function CardProject({
   name = "LKP & LPK Sekar",
@@ -28,7 +29,13 @@ function CardProject({
         />
         <div className="absolute top-0 right-0 p-3 bg-black/50 backdrop-blur-md rounded-xl border-2 border-white/70">
           <span className="text-xl">
-            {type === "Web" ? <TbWorld /> : <CiMobile3 />}
+            {type === "Web" ? (
+              <TbWorld />
+            ) : type === "Mobile" ? (
+              <CiMobile3 />
+            ) : (
+              <MdDesignServices />
+            )}
           </span>
         </div>
       </div>
