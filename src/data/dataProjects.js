@@ -165,6 +165,7 @@ export const dataProjects = [
       </>
     ),
     type: "UI",
+    link: "https://www.figma.com/proto/EsO8KgZjD5lRljkdT7Lmkn/Project-MyFarmer?node-id=153-844&p=f&t=7iT6GGXEUvlvUlB1-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=153%3A844",
   }, // airess
   {
     name: "SISA mobile app",

@@ -28,7 +28,7 @@ const SectionEducation = () => {
               "Vocational high school Muhammadiyah Gebang - Software Engineering"
             }
             description={
-              "Best student in a batch; Member of tapak suci martial arts organization; Vice Chairman of the Muhammadiyah Student Association of SMK Muhammadiyah Gebang for the period 2021 - 2022; Won an IT competitions organized by a national Vocational High School"
+              "Best student in a batch; member of the Tapak Suci martial arts organization; Vice Chairman of the Muhammadiyah Student Association of SMK Muhammadiyah Gebang for the period 2021 - 2022; Won an IT competition organized by a national vocational high school."
             }
           />
         </ol>
