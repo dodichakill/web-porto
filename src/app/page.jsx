@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
-import imgProfile from "@/assets/img/profile.webp";
+import imgProfile from "@/assets/img/hero-profile.webp";
 import Link from "next/link";
 import { FaRegNewspaper } from "react-icons/fa6";
 import Footer from "@/components/Footer";
