@@ -52,9 +52,9 @@ function Footer() {
           name={"Github : dodichakill"}
         />
         <ItemMedia
-          href={"https://www.instagram.com/dodix91/"}
+          href={"https://www.instagram.com/dodx91/"}
           icon={<FaInstagram />}
-          name={"Instagram : dodix91"}
+          name={"Instagram : dodx91"}
         />
       </div>
     </footer>
