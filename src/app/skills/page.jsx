@@ -16,11 +16,17 @@ import {
 } from "react-icons/fa6";
 import {
   SiAndroidstudio,
+  SiCsharp,
   SiFirebase,
+  SiFlask,
   SiFlutter,
   SiJavascript,
+  SiMongodb,
+  SiPostman,
+  SiPython,
   SiSolidity,
   SiTailwindcss,
+  SiUnity,
 } from "react-icons/si";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs, TbBrandVscode } from "react-icons/tb";
@@ -135,9 +141,13 @@ export default function Skills() {
         <div className="grid lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:mx-10 mb-20">
           <CardSkill icon={<FaPhp />} name={"PHP"} delay={500} />
           <CardSkill icon={<FaLaravel />} name={"Laravel"} delay={600} />
-          <CardSkill icon={<SiSolidity />} name={"Solidity"} delay={700} />
-          <CardSkill icon={<GrMysql />} name={"MySQL"} delay={800} />
-          <CardSkill icon={<SiFirebase />} name={"Firebase"} delay={900} />
+          <CardSkill icon={<SiPython />} name={"Python"} delay={700} />
+          <CardSkill icon={<SiCsharp />} name={"C#"} delay={800} />
+          <CardSkill icon={<SiFlask />} name={"Flask"} delay={800} />
+          <CardSkill icon={<SiSolidity />} name={"Solidity"} delay={900} />
+          <CardSkill icon={<GrMysql />} name={"MySQL"} delay={1000} />
+          <CardSkill icon={<SiMongodb />} name={"MongoDB"} delay={1100} />
+          <CardSkill icon={<SiFirebase />} name={"Firebase"} delay={1200} />
         </div>
 
         {/* ===== Tools Skills ===== */}
@@ -163,6 +173,8 @@ export default function Skills() {
             name={"MacOS, Linux, Windows"}
             delay={900}
           />
+          <CardSkill icon={<SiUnity />} name={"Unity"} delay={1000} />
+          <CardSkill icon={<SiPostman />} name={"Postman"} delay={1100} />
         </div>
       </Container>
     </div>
