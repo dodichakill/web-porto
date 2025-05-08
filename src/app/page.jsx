@@ -68,7 +68,7 @@ export default function Home() {
                 target="_blank"
               >
                 <span className="flex gap-2 items-center">
-                  <FaRegNewspaper /> Check out My Resume
+                  <FaRegNewspaper /> See My Resume
                 </span>
               </Link>
             </div>
