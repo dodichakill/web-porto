@@ -2,7 +2,6 @@ import TextTitle from "@/components/TextTitle";
 import React from "react";
 import { PiCertificateFill } from "react-icons/pi";
 import CardAward from "@/components/CardAward";
-import imgAgrolynWeb from "@/assets/img/webagrolyn.webp";
 import { dataAwards } from "@/data/dataAwards";
 
 const SectionAwards = () => {

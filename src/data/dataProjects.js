@@ -1,22 +1,23 @@
-import imgTechtitans from "@/assets/img/tech-titans.webp";
-import imgLKP from "@/assets/img/lkp.webp";
-import imgWy from "@/assets/img/wonderfuly.webp";
-import imgNoc from "@/assets/img/noc.webp";
-import imgTranquilmind from "@/assets/img/tranquilmind.webp";
-import imgAiress from "@/assets/img/Airess.webp";
-import imgAgrolynWeb from "@/assets/img/webagrolyn.webp";
-import imgAgrolynM from "@/assets/img/agrolyn-m.webp";
-import imgHipmi from "@/assets/img/hipmi.webp";
-import imgFoodinesia from "@/assets/img/foodinesia.webp";
-import imgJaskipin from "@/assets/img/Djaskipin.webp";
-import imgSisa from "@/assets/img/SISA.webp";
-import imgMF from "@/assets/img/myfarmer.webp";
-import imgExplorenias from "@/assets/img/explorenias.webp";
+import imgTechtitans from "@/assets/img/projects/tech-titans.webp";
+import imgLKP from "@/assets/img/projects/lkp.webp";
+import imgWy from "@/assets/img/projects/wonderfuly.webp";
+import imgNoc from "@/assets/img/projects/noc.webp";
+import imgTranquilmind from "@/assets/img/projects/tranquilmind.webp";
+import imgAiress from "@/assets/img/projects/Airess.webp";
+import imgAgrolynWeb from "@/assets/img/projects/web-agrolyn.webp";
+import imgAgrolynM from "@/assets/img/projects/agrolyn-m.webp";
+import imgHipmi from "@/assets/img/projects/hipmi.webp";
+import imgFoodinesia from "@/assets/img/projects/foodinesia.webp";
+import imgJaskipin from "@/assets/img/projects/Djaskipin.webp";
+import imgSisa from "@/assets/img/projects/SISA.webp";
+import imgMF from "@/assets/img/projects/myfarmer.webp";
+import imgExplorenias from "@/assets/img/projects/explorenias.webp";
 import {
   SiFirebase,
   SiFlask,
   SiFlutter,
   SiJavascript,
+  SiNextdotjs,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
@@ -32,8 +33,8 @@ export const dataProjects = [
     desc: "Web Agrolyn is a future agriculture smart solution website project with AI prediction & assistant. (lite version)",
     icTech: (
       <>
-        <SiFlutter title="Flutter" /> <GrMysql title="MySQL" />{" "}
-        <SiFlask title="Flask" />{" "}
+        <SiNextdotjs title="NextJS" /> <SiTailwindcss title="Tailwind" />{" "}
+        <GrMysql title="MySQL" /> <SiFlask title="Flask" />{" "}
       </>
     ),
     link: "https://web.agrolyn.online/",
