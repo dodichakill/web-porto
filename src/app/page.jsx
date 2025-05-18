@@ -62,21 +62,15 @@ export default function Home() {
             </p>
 
             <div className="flex items-center md:items-start">
-              <button
-                onClick={() => {
-                  const link = document.createElement("a");
-                  link.href = "/resume/CV-ATS.pdf";
-                  link.download = "CV-Dodi.pdf";
-                  document.body.appendChild(link);
-                  link.click();
-                  document.body.removeChild(link);
-                }}
-                className="resume mx-auto md:mx-0 mt-5 transition-all hover:bg-blue-300 hover:text-white inline-block text-blue-500 font-semibold text-xl font-sans bg-white px-5 py-4 rounded-xl cursor-pointer"
+              <Link
+                href="./"
+                className="resume mx-auto md:mx-0 mt-5 transition-all hover:bg-blue-300 hover:text-white inline-block text-blue-500 font-semibold text-xl font-sans bg-white px-5 py-4 rounded-xl"
+                target="_blank"
               >
                 <span className="flex gap-2 items-center">
-                  <FaRegNewspaper /> Download My CV
+                  <FaRegNewspaper /> Download CV
                 </span>
-              </button>
+              </Link>
             </div>
           </section>
           <Image

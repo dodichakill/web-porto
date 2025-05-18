@@ -18,7 +18,7 @@ const SectionEducation = () => {
             date={"2022 - 2026"}
             title={"Polytechnic of Harapan Bersama - Informatics Engineering"}
             description={
-              "Cumulative Grade Point Average : 3.75 from 4; Won several IT competitions organized by several National Campuses; volunteers create a competition information website from the informatics engineering study program"
+              "Cumulative Grade Point Average : 3.75 from 4; Won several IT competitions organized by several National Campuses"
             }
           />
           <ItemTimeline
