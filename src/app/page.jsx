@@ -63,12 +63,13 @@ export default function Home() {
 
             <div className="flex items-center md:items-start">
               <Link
-                href="./"
+                href="/resume/CV-ATS.pdf"
                 className="resume mx-auto md:mx-0 mt-5 transition-all hover:bg-blue-300 hover:text-white inline-block text-blue-500 font-semibold text-xl font-sans bg-white px-5 py-4 rounded-xl"
                 target="_blank"
+                download="CV-Dodi.pdf"
               >
                 <span className="flex gap-2 items-center">
-                  <FaRegNewspaper /> Download CV
+                  <FaRegNewspaper /> Download My CV
                 </span>
               </Link>
             </div>
