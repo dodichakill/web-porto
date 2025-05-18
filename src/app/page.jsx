@@ -64,7 +64,7 @@ export default function Home() {
             <div className="flex items-center md:items-start">
               <Link
                 href="/resume/CV-ATS.pdf"
-                className="resume mx-auto md:mx-0 mt-5 transition-all hover:bg-blue-300 hover:text-white inline-block text-blue-500 font-semibold text-xl font-sans bg-white px-5 py-4 rounded-xl"
+                className="resume mx-auto md:mx-0 mt-5 transition-all hover:from-blue-600 hover:to-blue-700 hover:text-white inline-block text-blue-500 font-semibold text-xl font-sans bg-gradient-to-r from-white to-blue-100 px-5 py-4 rounded-xl"
                 target="_blank"
                 download="CV-Dodi.pdf"
               >
