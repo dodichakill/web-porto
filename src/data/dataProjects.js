@@ -37,7 +37,7 @@ export const dataProjects = [
         <GrMysql title="MySQL" /> <SiFlask title="Flask" />{" "}
       </>
     ),
-    link: "https://web.agrolyn.online/",
+    link: "https://web-agrolyn.vercel.app/",
     type: "Web",
   }, // web agrolyn
   {
