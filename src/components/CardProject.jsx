@@ -25,7 +25,7 @@ function CardProject({
         <Image
           src={image}
           alt={"project " + name}
-          className="w-full h-full shadow-sm rounded grayscale scale-110 group-hover:grayscale-0 transition-all object-cover"
+          className="w-full h-full shadow-sm rounded scale-110 object-cover"
         />
         <div className="absolute top-0 right-0 p-3 bg-black/50 backdrop-blur-md rounded-xl border-2 border-white/70">
           <span className="text-xl">
