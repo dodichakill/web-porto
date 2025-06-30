@@ -5,6 +5,7 @@ import { FaEye } from "react-icons/fa6";
 import { TbWorld } from "react-icons/tb";
 import { CiMobile3 } from "react-icons/ci";
 import { MdDesignServices } from "react-icons/md";
+import { IoGameController } from "react-icons/io5";
 
 function CardProject({
   name = "LKP & LPK Sekar",
@@ -33,6 +34,8 @@ function CardProject({
               <TbWorld />
             ) : type === "Mobile" ? (
               <CiMobile3 />
+            ) : type === "Game" ? (
+              <IoGameController />
             ) : (
               <MdDesignServices />
             )}

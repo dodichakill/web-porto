@@ -9,7 +9,7 @@ import { FaProjectDiagram, FaSearch } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import { CiMobile3 } from "react-icons/ci";
 import { MdDesignServices } from "react-icons/md";
-import { IoFilterSharp } from "react-icons/io5";
+import { IoFilterSharp, IoGameController } from "react-icons/io5";
 import { IoIosCloseCircle } from "react-icons/io";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -19,7 +19,7 @@ export default function Projects() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedType, setSelectedType] = useState("All");
   const [isFilterVisible, setIsFilterVisible] = useState(false);
-  const types = ["All", "Web", "Mobile", "UI"];
+  const types = ["All", "Web", "Mobile", "Game", "UI"];
 
   useEffect(() => {
     Aos.init({
@@ -28,13 +28,14 @@ export default function Projects() {
   }, []);
 
   // Filter projects based on search term and selected type
-  const filteredProjects = dataProjects.filter(project => {
-    const matchesSearch = searchTerm === "" || 
+  const filteredProjects = dataProjects.filter((project) => {
+    const matchesSearch =
+      searchTerm === "" ||
       project.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       project.desc.toLowerCase().includes(searchTerm.toLowerCase());
-      
+
     const matchesType = selectedType === "All" || project.type === selectedType;
-    
+
     return matchesSearch && matchesType;
   });
 
@@ -47,6 +48,8 @@ export default function Projects() {
         return <CiMobile3 className="text-xl" />;
       case "UI":
         return <MdDesignServices className="text-xl" />;
+      case "Game":
+        return <IoGameController className="text-xl" />;
       default:
         return null;
     }
@@ -96,11 +99,18 @@ export default function Projects() {
             </button>
 
             {/* Filter Options - Desktop */}
-            <div className="hidden md:flex items-center gap-2 flex-wrap" data-aos="fade-left">
+            <div
+              className="hidden md:flex items-center gap-2 flex-wrap"
+              data-aos="fade-left"
+            >
               {types.map((type) => (
                 <button
                   key={type}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-xl transition-all ${selectedType === type ? 'bg-blue-500 text-white' : 'bg-blue-100 hover:bg-blue-200 text-blue-800'}`}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-xl transition-all ${
+                    selectedType === type
+                      ? "bg-blue-500 text-white"
+                      : "bg-blue-100 hover:bg-blue-200 text-blue-800"
+                  }`}
                   onClick={() => setSelectedType(type)}
                 >
                   {type !== "All" && <TypeIcon type={type} />}
@@ -112,14 +122,18 @@ export default function Projects() {
 
           {/* Filter Options - Mobile (Collapsible) */}
           {isFilterVisible && (
-            <div 
+            <div
               className="flex md:hidden items-center gap-2 flex-wrap pb-4 animate-slideDown"
               data-aos="fade-down"
             >
               {types.map((type) => (
                 <button
                   key={type}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-xl transition-all ${selectedType === type ? 'bg-blue-500 text-white' : 'bg-blue-100 hover:bg-blue-200 text-blue-800'}`}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-xl transition-all ${
+                    selectedType === type
+                      ? "bg-blue-500 text-white"
+                      : "bg-blue-100 hover:bg-blue-200 text-blue-800"
+                  }`}
                   onClick={() => setSelectedType(type)}
                 >
                   {type !== "All" && <TypeIcon type={type} />}
@@ -130,7 +144,7 @@ export default function Projects() {
           )}
 
           {/* Results Count */}
-          <div 
+          <div
             className="text-gray-600 font-medium"
             data-aos="fade-up"
             data-aos-delay="200"
@@ -157,7 +171,10 @@ export default function Projects() {
               />
             ))
           ) : (
-            <div className="col-span-3 text-center py-16 text-gray-500" data-aos="fade-up">
+            <div
+              className="col-span-3 text-center py-16 text-gray-500"
+              data-aos="fade-up"
+            >
               <div className="text-8xl mb-4 opacity-30 mx-auto">🔍</div>
               <h3 className="text-xl font-bold mb-2">No projects found</h3>
               <p>Try adjusting your search or filter criteria</p>

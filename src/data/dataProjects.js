@@ -12,7 +12,9 @@ import imgJaskipin from "@/assets/img/projects/Djaskipin.webp";
 import imgSisa from "@/assets/img/projects/SISA.webp";
 import imgMF from "@/assets/img/projects/myfarmer.webp";
 import imgExplorenias from "@/assets/img/projects/explorenias.webp";
+import imgRocketSpaceBoost from "@/assets/img/projects/rsb-game.webp";
 import {
+  SiCsharp,
   SiFirebase,
   SiFlask,
   SiFlutter,
@@ -23,7 +25,7 @@ import {
 } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { TbBrandFigma, TbBrandNextjs } from "react-icons/tb";
-import { FaCss3, FaHtml5, FaLaravel } from "react-icons/fa6";
+import { FaCss3, FaHtml5, FaLaravel, FaUnity } from "react-icons/fa6";
 import { RiReactjsLine } from "react-icons/ri";
 
 export const dataProjects = [
@@ -52,6 +54,18 @@ export const dataProjects = [
     ),
     type: "Mobile",
   }, // web agrolyn
+  {
+    name: "Rocket Space Boost",
+    image: imgRocketSpaceBoost,
+    desc: "A thrilling 3D arcade game for Android where you control a rocket through obstacles in outer space.",
+    icTech: (
+      <>
+        <SiCsharp title="C#" /> <FaUnity title="Unity" />{" "}
+      </>
+    ),
+    link: "https://drive.google.com/drive/folders/1rFLJ2MQfu1A7X6MXOsJ-N4YAt4P1cqrq",
+    type: "Game",
+  },
   {
     name: "Nocturn",
     image: imgNoc,

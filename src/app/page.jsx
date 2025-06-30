@@ -57,8 +57,8 @@ export default function Home() {
             <p className="mt-6 md:text-lg font-mono text-center md:text-left">
               Software Engineer specializing in Frontend Development and a Web3
               Enthusiast. Strong analytical and creative problem-solving skills
-              honed through years of coding. IT enthusiast seeking to leverage
-              expertise for impactful solutions.
+              honed through years of coding. Long life learner & IT enthusiast
+              seeking to leverage expertise for impactful solutions.
             </p>
 
             <div className="flex items-center md:items-start">
