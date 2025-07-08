@@ -7,10 +7,12 @@ import imgAiress from "@/assets/img/projects/Airess.webp";
 import imgAgrolynWeb from "@/assets/img/projects/web-agrolyn.webp";
 import imgAgrolynM from "@/assets/img/projects/agrolyn-m.webp";
 import imgHipmi from "@/assets/img/projects/hipmi.webp";
+import imgJakwir from "@/assets/img/projects/jakwir.webp";
 import imgFoodinesia from "@/assets/img/projects/foodinesia.webp";
 import imgJaskipin from "@/assets/img/projects/Djaskipin.webp";
 import imgSisa from "@/assets/img/projects/SISA.webp";
 import imgMF from "@/assets/img/projects/myfarmer.webp";
+import imgMonfund from "@/assets/img/projects/monfund.webp";
 import imgExplorenias from "@/assets/img/projects/explorenias.webp";
 import imgRocketSpaceBoost from "@/assets/img/projects/rsb-game.webp";
 import {
@@ -20,6 +22,8 @@ import {
   SiFlutter,
   SiJavascript,
   SiNextdotjs,
+  SiReact,
+  SiSolidity,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
@@ -65,6 +69,31 @@ export const dataProjects = [
     ),
     link: "https://drive.google.com/drive/folders/1rFLJ2MQfu1A7X6MXOsJ-N4YAt4P1cqrq",
     type: "Game",
+  },
+  {
+    name: "MonFund Web3",
+    image: imgMonfund,
+    desc: "A blockhain-based crowdfunding platform to fund innovative programs in the campus environment.",
+    icTech: (
+      <>
+        <SiReact title="ReactJS" /> <SiTailwindcss title="Tailwind" />{" "}
+        <SiSolidity title="Solidity" /> <SiTypescript title="Typescript" />
+      </>
+    ),
+    link: "https://monfund.vercel.app/",
+    type: "Web",
+  },
+  {
+    name: "Sapa Jakwir Teksin Mobile App",
+    image: imgJakwir,
+    desc: "Mobile super app for cluster housing solutions in Tegal City, Central Java.",
+    icTech: (
+      <>
+        <SiFlutter title="Flutter" /> <GrMysql title="MySQL" />{" "}
+        <SiFlask title="Flask" />{" "}
+      </>
+    ),
+    type: "Mobile",
   },
   {
     name: "Nocturn",
@@ -179,7 +208,7 @@ export const dataProjects = [
         <TbBrandFigma title="Figma" />
       </>
     ),
-    type: "UI",
+    type: "UIUX",
     link: "https://www.figma.com/proto/EsO8KgZjD5lRljkdT7Lmkn/Project-MyFarmer?node-id=153-844&p=f&t=7iT6GGXEUvlvUlB1-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=153%3A844",
   }, // airess
   {

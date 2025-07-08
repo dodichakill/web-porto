@@ -19,7 +19,7 @@ export default function Projects() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedType, setSelectedType] = useState("All");
   const [isFilterVisible, setIsFilterVisible] = useState(false);
-  const types = ["All", "Web", "Mobile", "Game", "UI"];
+  const types = ["All", "Web", "Mobile", "Game", "UIUX"];
 
   useEffect(() => {
     Aos.init({
@@ -46,7 +46,7 @@ export default function Projects() {
         return <TbWorld className="text-xl" />;
       case "Mobile":
         return <CiMobile3 className="text-xl" />;
-      case "UI":
+      case "UIUX":
         return <MdDesignServices className="text-xl" />;
       case "Game":
         return <IoGameController className="text-xl" />;
