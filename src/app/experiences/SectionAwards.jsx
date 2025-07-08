@@ -14,16 +14,17 @@ const SectionAwards = () => {
   const types = ["All", "Competition", "Certificate"];
 
   // Filter awards based on search term and selected type
-  const filteredAwards = dataAwards.filter(award => {
-    const matchesSearch = searchTerm === "" || 
+  const filteredAwards = dataAwards.filter((award) => {
+    const matchesSearch =
+      searchTerm === "" ||
       award.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       award.description.toLowerCase().includes(searchTerm.toLowerCase());
-      
-    const matchesType = 
-      selectedType === "All" || 
+
+    const matchesType =
+      selectedType === "All" ||
       (selectedType === "Competition" && award.isCompetition) ||
       (selectedType === "Certificate" && !award.isCompetition);
-    
+
     return matchesSearch && matchesType;
   });
 
@@ -42,19 +43,19 @@ const SectionAwards = () => {
   return (
     <>
       <TextTitle icon={<PiCertificateFill />} text="Awards & Certificates" />
-      
+
       {/* Search and Filter UI */}
       <div className="mb-8 mx-2 lg:mx-5">
-        <div className="flex flex-wrap justify-between items-center gap-4 mb-6">
+        <div className="flex flex-wrap justify-center items-center gap-4 mb-6">
           {/* Search Input */}
-          <div className="relative flex-grow max-w-xl" data-aos="fade-right">
-            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <FaSearch className="text-gray-500" />
+          <div className="relative flex-grow max-w-lg" data-aos="fade-right">
+            <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none z-10">
+              <FaSearch className="text-gray-500 text-sm" />
             </div>
             <input
               type="text"
-              placeholder="Search awards..."
-              className="w-full pl-10 pr-4 py-3 rounded-xl border-2 border-blue-300 focus:border-blue-500 focus:outline-none transition-all bg-white/70 backdrop-blur-md"
+              placeholder="Search projects..."
+              className="w-full pl-10 pr-4 py-3 rounded-xl border-2 border-blue-300 focus:border-blue-500 focus:outline-none transition-all bg-white/70 backdrop-blur-md relative z-0"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               data-aos="fade-right"
@@ -81,11 +82,18 @@ const SectionAwards = () => {
           </button>
 
           {/* Filter Options - Desktop */}
-          <div className="hidden md:flex items-center gap-2 flex-wrap" data-aos="fade-left">
+          <div
+            className="hidden md:flex items-center gap-2 flex-wrap"
+            data-aos="fade-left"
+          >
             {types.map((type) => (
               <button
                 key={type}
-                className={`flex items-center gap-2 px-4 py-2 rounded-xl transition-all ${selectedType === type ? 'bg-blue-500 text-white' : 'bg-blue-100 hover:bg-blue-200 text-blue-800'}`}
+                className={`flex items-center gap-2 px-5 py-3 rounded-xl transition-all ${
+                  selectedType === type
+                    ? "bg-blue-500 text-white"
+                    : "bg-blue-100 hover:bg-blue-200 text-blue-800"
+                }`}
                 onClick={() => setSelectedType(type)}
               >
                 {type !== "All" && <TypeIcon type={type} />}
@@ -97,14 +105,18 @@ const SectionAwards = () => {
 
         {/* Filter Options - Mobile (Collapsible) */}
         {isFilterVisible && (
-          <div 
+          <div
             className="flex md:hidden items-center gap-2 flex-wrap pb-4 animate-slideDown"
             data-aos="fade-down"
           >
             {types.map((type) => (
               <button
                 key={type}
-                className={`flex items-center gap-2 px-4 py-2 rounded-xl transition-all ${selectedType === type ? 'bg-blue-500 text-white' : 'bg-blue-100 hover:bg-blue-200 text-blue-800'}`}
+                className={`flex items-center gap-2 py-3 px-4 rounded-xl transition-all ${
+                  selectedType === type
+                    ? "bg-blue-500 text-white"
+                    : "bg-blue-100 hover:bg-blue-200 text-blue-800"
+                }`}
                 onClick={() => setSelectedType(type)}
               >
                 {type !== "All" && <TypeIcon type={type} />}
@@ -115,13 +127,13 @@ const SectionAwards = () => {
         )}
 
         {/* Results Count */}
-        <div 
-          className="text-gray-600 font-medium"
+        <div
+          className="text-gray-600 font-medium text-center mt-4"
           data-aos="fade-up"
           data-aos-delay="200"
         >
           Showing {filteredAwards.length} of {dataAwards.length} items
-          {selectedType !== "All" && ` in ${selectedType}`}
+          {selectedType !== "All" && ` in ${selectedType} Category`}
           {searchTerm && ` matching "${searchTerm}"`}
         </div>
       </div>
@@ -140,7 +152,10 @@ const SectionAwards = () => {
             />
           ))
         ) : (
-          <div className="col-span-3 text-center py-16 text-gray-500" data-aos="fade-up">
+          <div
+            className="col-span-3 text-center py-16 text-gray-500"
+            data-aos="fade-up"
+          >
             <div className="text-8xl mb-4 opacity-30 mx-auto">🔍</div>
             <h3 className="text-xl font-bold mb-2">No awards found</h3>
             <p>Try adjusting your search or filter criteria</p>
