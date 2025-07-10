@@ -128,7 +128,7 @@ export const dataAwards = [
   {
     title: "Monad Builder - Hackquest",
     description:
-      "Pass blockchain learning path monad network - monad buulder course from hackquest",
+      "Pass blockchain learning path monad network - monad builder course from hackquest",
     isCompetition: false,
     image: monBuild,
   },
