@@ -9,9 +9,12 @@ import bwaL from "@/assets/img/awards/BWA - laravel.webp";
 import witS from "@/assets/img/awards/WIT - softskills.webp";
 import finDinus from "@/assets/img/awards/finalis - udinus.webp";
 import jhKrenova from "@/assets/img/awards/krenova-harapan1.webp";
+import konkiti from "@/assets/img/awards/konkiti.webp";
 import dicFlutter from "@/assets/img/awards/flutter-pemula-dicoding.webp";
 import dicMlPemula from "@/assets/img/awards/ml-pemula-dicoding.webp";
 import solUdemy from "@/assets/img/awards/solidity-udemy.webp";
+import monLearn from "@/assets/img/awards/monad-learner.webp";
+import monBuild from "@/assets/img/awards/monad-builder.webp";
 import itSup from "@/assets/img/awards/IT support.webp";
 
 export const dataAwards = [
@@ -50,6 +53,20 @@ export const dataAwards = [
     image: kmipn,
   },
   {
+    title: "3rd Winner - Web Development Competition",
+    description:
+      "Web Development Competition Konkiti Vol 2 from PT Indo Apps Solusindo",
+    isCompetition: true,
+    image: konkiti,
+  },
+  {
+    title: "1st runner-up in the General Category",
+    description:
+      "1st runner-up in the General Category of Krenova Competition Tegal City 2025",
+    isCompetition: true,
+    image: jhKrenova,
+  },
+  {
     title: "Finalist - Web Design Competition",
     description:
       "Web Design Competition 2024 from Universitas Islam Nahdlatul Ulama Jepara",
@@ -62,19 +79,6 @@ export const dataAwards = [
       "IT Competition Web Development DINUSFEST 2025 from Universitas Dian Nuswantoro",
     isCompetition: true,
     image: finDinus,
-  },
-  {
-    title: "1st runner-up in the General Category",
-    description:
-      "1st runner-up in the General Category of Krenova Competition Tegal City 2025",
-    isCompetition: true,
-    image: jhKrenova,
-  },
-  {
-    title: "Ethereum and Solidity: The Complete Developer's Guide",
-    description: "Certificate of Completion from Udemy",
-    isCompetition: false,
-    image: solUdemy,
   },
   {
     title: "Learn to Make Flutter Apps for Beginners",
@@ -113,5 +117,25 @@ export const dataAwards = [
       "Inco Academy Work In Tech Indonesia 2022 from Yayasan Plan Internasional Indonesia",
     isCompetition: false,
     image: witS,
+  },
+  {
+    title: "Monad Learner - Hackquest",
+    description:
+      "Pass blockchain learning path monad network - monad learner course from hackquest",
+    isCompetition: false,
+    image: monLearn,
+  },
+  {
+    title: "Monad Builder - Hackquest",
+    description:
+      "Pass blockchain learning path monad network - monad buulder course from hackquest",
+    isCompetition: false,
+    image: monBuild,
+  },
+  {
+    title: "Ethereum and Solidity: The Complete Developer's Guide",
+    description: "Certificate of Completion from Udemy",
+    isCompetition: false,
+    image: solUdemy,
   },
 ];
