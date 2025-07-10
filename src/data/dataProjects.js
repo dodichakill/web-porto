@@ -33,6 +33,7 @@ import { FaCss3, FaHtml5, FaLaravel, FaUnity } from "react-icons/fa6";
 import { RiReactjsLine } from "react-icons/ri";
 
 export const dataProjects = [
+  // row 1
   {
     name: "Web Agrolyn",
     image: imgAgrolynWeb,
@@ -70,6 +71,7 @@ export const dataProjects = [
     link: "https://drive.google.com/drive/folders/1rFLJ2MQfu1A7X6MXOsJ-N4YAt4P1cqrq",
     type: "Game",
   },
+  // row 2
   {
     name: "MonFund Web3",
     image: imgMonfund,
@@ -96,18 +98,19 @@ export const dataProjects = [
     type: "Mobile",
   },
   {
-    name: "Nocturn",
-    image: imgNoc,
-    desc: "Nocturn is a web app designed to relax and help you improve your sleep quality.",
+    name: "LKP & LPK Sekar",
+    image: imgLKP,
+    desc: "An official web project of LKP & LKP Sekar in Tegal City, Central Java.",
     icTech: (
       <>
-        <TbBrandNextjs title="NextJS" /> <SiTailwindcss title="Tailwind" />{" "}
-        <SiFirebase title="Firebase" /> <SiTypescript title="Typescript" />{" "}
+        <FaLaravel title="Laravel" /> <SiTailwindcss title="Tailwind" />{" "}
+        <GrMysql title="MySQL" /> <RiReactjsLine title="React" />{" "}
       </>
     ),
-    link: "https://nocturn-site.netlify.app/",
+    link: "https://lkpdanlpksekar.com/",
     type: "Web",
-  }, // nocturn
+  },
+  // row 3
   {
     name: "TranquilMind id",
     image: imgTranquilmind,
@@ -122,6 +125,18 @@ export const dataProjects = [
     type: "Web",
   }, // tranquilmind
   {
+    name: "MyFarmer",
+    image: imgMF,
+    desc: "A mobile application design about E-Commerce & Agriculture Education.",
+    icTech: (
+      <>
+        <TbBrandFigma title="Figma" />
+      </>
+    ),
+    type: "UIUX",
+    link: "https://www.figma.com/proto/EsO8KgZjD5lRljkdT7Lmkn/Project-MyFarmer?node-id=153-844&p=f&t=7iT6GGXEUvlvUlB1-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=153%3A844",
+  }, // MyFarmer
+  {
     name: "Wonderful Yogyakarta",
     image: imgWy,
     desc: "A website to introduce culture, tourism & culinary in Yogyakarta.",
@@ -134,32 +149,33 @@ export const dataProjects = [
     link: "https://wonderful-yogyakarta.netlify.app/",
     type: "Web",
   }, // wonderful yogyakarta
+  // row 4
   {
-    name: "LKP & LPK Sekar",
-    image: imgLKP,
-    desc: "An official web project of LKP & LKP Sekar in Tegal City, Central Java.",
-    icTech: (
-      <>
-        <FaLaravel title="Laravel" /> <SiTailwindcss title="Tailwind" />{" "}
-        <GrMysql title="MySQL" /> <RiReactjsLine title="React" />{" "}
-      </>
-    ),
-    link: "https://lkpdanlpksekar.com/",
-    type: "Web",
-  }, // lkpdanlpksekar
-  {
-    name: "Tech Titans",
-    image: imgTechtitans,
-    desc: "A web landing page for Tech Titans to showcase their products and services.",
+    name: "Nocturn",
+    image: imgNoc,
+    desc: "Nocturn is a web app designed to relax and help you improve your sleep quality.",
     icTech: (
       <>
         <TbBrandNextjs title="NextJS" /> <SiTailwindcss title="Tailwind" />{" "}
-        <SiTypescript title="Typescript" />{" "}
+        <SiFirebase title="Firebase" /> <SiTypescript title="Typescript" />{" "}
       </>
     ),
-    link: "https://tech-titans-site.vercel.app/",
+    link: "https://nocturn-site.netlify.app/",
     type: "Web",
-  }, // tech titans
+  }, // nocturn
+  {
+    name: "SISA mobile app",
+    image: imgSisa,
+    desc: "A waste bank mobile application project for the Cirebon district government",
+    icTech: (
+      <>
+        <SiJavascript title="Javascript" />{" "}
+        <RiReactjsLine title="React Native" />{" "}
+        <SiTailwindcss title="Nativewind" />
+      </>
+    ),
+    type: "Mobile",
+  }, // sisa
   {
     name: "Explore Nias",
     image: imgExplorenias,
@@ -173,6 +189,7 @@ export const dataProjects = [
     link: "https://explore-nias.vercel.app/",
     type: "Web",
   }, // explore nias
+  // row 5
   {
     name: "Foodinesia",
     image: imgFoodinesia,
@@ -200,30 +217,19 @@ export const dataProjects = [
     type: "Web",
   }, // airess
   {
-    name: "MyFarmer",
-    image: imgMF,
-    desc: "A mobile application design about E-Commerce & Agriculture Education.",
+    name: "Tech Titans",
+    image: imgTechtitans,
+    desc: "A web landing page for Tech Titans to showcase their products and services.",
     icTech: (
       <>
-        <TbBrandFigma title="Figma" />
+        <TbBrandNextjs title="NextJS" /> <SiTailwindcss title="Tailwind" />{" "}
+        <SiTypescript title="Typescript" />{" "}
       </>
     ),
-    type: "UIUX",
-    link: "https://www.figma.com/proto/EsO8KgZjD5lRljkdT7Lmkn/Project-MyFarmer?node-id=153-844&p=f&t=7iT6GGXEUvlvUlB1-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=153%3A844",
-  }, // airess
-  {
-    name: "SISA mobile app",
-    image: imgSisa,
-    desc: "A waste bank mobile application project for the Cirebon district government",
-    icTech: (
-      <>
-        <SiJavascript title="Javascript" />{" "}
-        <RiReactjsLine title="React Native" />{" "}
-        <SiTailwindcss title="Nativewind" />
-      </>
-    ),
-    type: "Mobile",
-  }, // sisa
+    link: "https://tech-titans-site.vercel.app/",
+    type: "Web",
+  }, // tech titans
+  // row 6
   {
     name: "Ticketing Hipmi",
     image: imgHipmi,
