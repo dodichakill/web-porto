@@ -62,6 +62,7 @@ export default function Skills() {
               icon={skill.icon}
               name={skill.name}
               delay={skill.delay}
+              isSmall={skill.isSmall}
             />
           ))}
         </div>

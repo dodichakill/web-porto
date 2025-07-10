@@ -58,7 +58,7 @@ export const dataProjects = [
       </>
     ),
     type: "Mobile",
-  }, // web agrolyn
+  }, // mobile agrolyn
   {
     name: "Rocket Space Boost",
     image: imgRocketSpaceBoost,
@@ -70,7 +70,7 @@ export const dataProjects = [
     ),
     link: "https://drive.google.com/drive/folders/1rFLJ2MQfu1A7X6MXOsJ-N4YAt4P1cqrq",
     type: "Game",
-  },
+  }, // Rocket Space Boost
   // row 2
   {
     name: "MonFund Web3",
@@ -84,7 +84,7 @@ export const dataProjects = [
     ),
     link: "https://monfund.vercel.app/",
     type: "Web",
-  },
+  }, // monfund
   {
     name: "Sapa Jakwir Teksin Mobile App",
     image: imgJakwir,
@@ -96,7 +96,7 @@ export const dataProjects = [
       </>
     ),
     type: "Mobile",
-  },
+  }, // sapa jakwir
   {
     name: "LKP & LPK Sekar",
     image: imgLKP,
@@ -109,7 +109,7 @@ export const dataProjects = [
     ),
     link: "https://lkpdanlpksekar.com/",
     type: "Web",
-  },
+  }, // lkp & lpk sekar
   // row 3
   {
     name: "TranquilMind id",
